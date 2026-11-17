@@ -1,0 +1,97 @@
+{
+  "components": [
+    {
+      "ref": "J1",
+      "value": "Conn_01x02_Pin",
+      "footprint": "Connector_AMASS:AMASS_XT60-M_1x02_P7.20mm_Vertical",
+      "x": 93.625,
+      "y": 51.43,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(J1-Pin_1)",
+        "2": "GND"
+      },
+      "pads": [
+        "J1.1",
+        "J1.2"
+      ]
+    },
+    {
+      "ref": "Q1",
+      "value": "2SC1815",
+      "footprint": "Package_TO_SOT_THT:TO-92_Inline",
+      "x": 90.5,
+      "y": 61.0,
+      "rotation": 90.0,
+      "pin_count": 3,
+      "pins": {
+        "1": "Net-(Q1-E)",
+        "2": "Net-(Q1-C)",
+        "3": "Net-(J1-Pin_1)"
+      },
+      "pads": [
+        "Q1.1",
+        "Q1.2",
+        "Q1.3"
+      ]
+    },
+    {
+      "ref": "Q2",
+      "value": "BC109",
+      "footprint": "Package_TO_SOT_THT:TO-18-3",
+      "x": 102.5,
+      "y": 59.73,
+      "rotation": -90.0,
+      "pin_count": 3,
+      "pins": {
+        "1": "Net-(Q2-E)",
+        "2": "Net-(Q1-C)",
+        "3": "Net-(Q2-C)"
+      },
+      "pads": [
+        "Q2.1",
+        "Q2.2",
+        "Q2.3"
+      ]
+    },
+    {
+      "ref": "Q3",
+      "value": "2SD600",
+      "footprint": "Package_TO_SOT_THT:TO-126-3_Vertical",
+      "x": 89.72,
+      "y": 67.125,
+      "rotation": 0.0,
+      "pin_count": 3,
+      "pins": {
+        "1": "GND",
+        "2": "Net-(Q2-E)",
+        "3": "Net-(Q1-E)"
+      },
+      "pads": [
+        "Q3.1",
+        "Q3.2",
+        "Q3.3"
+      ]
+    },
+    {
+      "ref": "Q4",
+      "value": "2N3904",
+      "footprint": "Package_TO_SOT_THT:TO-92_Wide",
+      "x": 104.04,
+      "y": 72.54,
+      "rotation": 90.0,
+      "pin_count": 3,
+      "pins": {
+        "1": "Net-(Q2-E)",
+        "2": "Net-(Q2-C)",
+        "3": "GND"
+      },
+      "pads": [
+        "Q4.1",
+        "Q4.2",
+        "Q4.3"
+      ]
+    }
+  ]
+}

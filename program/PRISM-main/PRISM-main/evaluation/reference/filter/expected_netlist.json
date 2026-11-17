@@ -1,0 +1,65 @@
+{
+  "nets": [
+    {
+      "name": "GND",
+      "pins": [
+        "C1.2",
+        "J1.1",
+        "J2.4",
+        "R1.2"
+      ],
+      "pin_count": 4
+    },
+    {
+      "name": "Net-(J1-Pin_2)",
+      "pins": [
+        "C2.1",
+        "J1.2"
+      ],
+      "pin_count": 2
+    },
+    {
+      "name": "Net-(J1-Pin_3)",
+      "pins": [
+        "J1.3",
+        "L2.1"
+      ],
+      "pin_count": 2
+    },
+    {
+      "name": "Net-(J1-Pin_4)",
+      "pins": [
+        "J1.4",
+        "L1.1",
+        "R1.1"
+      ],
+      "pin_count": 3
+    },
+    {
+      "name": "Net-(J2-Pin_1)",
+      "pins": [
+        "C1.1",
+        "J2.1",
+        "L1.2"
+      ],
+      "pin_count": 3
+    },
+    {
+      "name": "Net-(J2-Pin_2)",
+      "pins": [
+        "J2.2",
+        "L2.2"
+      ],
+      "pin_count": 2
+    },
+    {
+      "name": "Net-(J2-Pin_3)",
+      "pins": [
+        "C2.2",
+        "J2.3"
+      ],
+      "pin_count": 2
+    }
+  ],
+  "unconnected_pads": []
+}

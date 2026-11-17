@@ -1,0 +1,131 @@
+{
+  "components": [
+    {
+      "ref": "C1",
+      "value": "20mF",
+      "footprint": "Capacitor_THT:CP_Radial_Tantal_D8.0mm_P5.00mm",
+      "x": 133.5,
+      "y": 86.5,
+      "rotation": 180.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(J2-Pin_1)",
+        "2": "GND"
+      },
+      "pads": [
+        "C1.1",
+        "C1.2"
+      ]
+    },
+    {
+      "ref": "C2",
+      "value": "470pF",
+      "footprint": "Capacitor_THT:C_Rect_L9.0mm_W4.9mm_P7.50mm_MKT",
+      "x": 127.0,
+      "y": 49.5,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(J1-Pin_2)",
+        "2": "Net-(J2-Pin_3)"
+      },
+      "pads": [
+        "C2.1",
+        "C2.2"
+      ]
+    },
+    {
+      "ref": "J1",
+      "value": "Conn_01x04",
+      "footprint": "Connector_Wire:SolderWire-0.5sqmm_1x04_P4.8mm_D0.9mm_OD2.3mm",
+      "x": 114.8,
+      "y": 46.5,
+      "rotation": 180.0,
+      "pin_count": 4,
+      "pins": {
+        "1": "GND",
+        "2": "Net-(J1-Pin_2)",
+        "3": "Net-(J1-Pin_3)",
+        "4": "Net-(J1-Pin_4)"
+      },
+      "pads": [
+        "J1.1",
+        "J1.2",
+        "J1.3",
+        "J1.4"
+      ]
+    },
+    {
+      "ref": "J2",
+      "value": "Conn_01x04",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal",
+      "x": 145.115,
+      "y": 62.19,
+      "rotation": 0.0,
+      "pin_count": 4,
+      "pins": {
+        "1": "Net-(J2-Pin_1)",
+        "2": "Net-(J2-Pin_2)",
+        "3": "Net-(J2-Pin_3)",
+        "4": "GND"
+      },
+      "pads": [
+        "J2.1",
+        "J2.2",
+        "J2.3",
+        "J2.4"
+      ]
+    },
+    {
+      "ref": "L1",
+      "value": "20nH",
+      "footprint": "Inductor_THT:L_Axial_L20.0mm_D8.0mm_P7.62mm_Vertical",
+      "x": 108.09,
+      "y": 86.5,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(J1-Pin_4)",
+        "2": "Net-(J2-Pin_1)"
+      },
+      "pads": [
+        "L1.1",
+        "L1.2"
+      ]
+    },
+    {
+      "ref": "L2",
+      "value": "330mH",
+      "footprint": "Inductor_THT:L_Axial_L29.9mm_D14.0mm_P38.00mm_Horizontal_Vishay_IHA-105",
+      "x": 89.975,
+      "y": 61.265,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(J1-Pin_3)",
+        "2": "Net-(J2-Pin_2)"
+      },
+      "pads": [
+        "L2.1",
+        "L2.2"
+      ]
+    },
+    {
+      "ref": "R1",
+      "value": "100R",
+      "footprint": "Resistor_THT:R_Axial_Power_L20.0mm_W6.4mm_P25.40mm",
+      "x": 103.1,
+      "y": 73.5,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(J1-Pin_4)",
+        "2": "GND"
+      },
+      "pads": [
+        "R1.1",
+        "R1.2"
+      ]
+    }
+  ]
+}

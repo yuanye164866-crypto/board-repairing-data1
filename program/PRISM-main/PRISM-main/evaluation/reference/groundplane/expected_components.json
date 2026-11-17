@@ -1,0 +1,72 @@
+{
+  "components": [
+    {
+      "ref": "D1",
+      "value": "LED",
+      "footprint": "LED_THT:LED_D10.0mm",
+      "x": 105.54,
+      "y": 81.17,
+      "rotation": 180.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "GND",
+        "2": "Net-(D1-A)"
+      },
+      "pads": [
+        "D1.1",
+        "D1.2"
+      ]
+    },
+    {
+      "ref": "D2",
+      "value": "LED",
+      "footprint": "LED_THT:LED_D10.0mm",
+      "x": 105.54,
+      "y": 68.5,
+      "rotation": 180.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "GND",
+        "2": "Net-(D1-A)"
+      },
+      "pads": [
+        "D2.1",
+        "D2.2"
+      ]
+    },
+    {
+      "ref": "D3",
+      "value": "LED",
+      "footprint": "LED_THT:LED_D10.0mm",
+      "x": 105.54,
+      "y": 55.83,
+      "rotation": 180.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "GND",
+        "2": "Net-(D1-A)"
+      },
+      "pads": [
+        "D3.1",
+        "D3.2"
+      ]
+    },
+    {
+      "ref": "R1",
+      "value": "1K",
+      "footprint": "Resistor_THT:R_Axial_DIN0918_L18.0mm_D9.0mm_P25.40mm_Horizontal",
+      "x": 87.0,
+      "y": 93.7,
+      "rotation": 90.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "+5V",
+        "2": "Net-(D1-A)"
+      },
+      "pads": [
+        "R1.1",
+        "R1.2"
+      ]
+    }
+  ]
+}

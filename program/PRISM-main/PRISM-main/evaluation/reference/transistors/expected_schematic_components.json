@@ -1,0 +1,40 @@
+{
+  "source_schematic": "Dataset/Transistors/Transistors/Transistors.kicad_sch",
+  "components": [
+    {
+      "ref": "J1",
+      "value": "Conn_01x02_Pin",
+      "lib_id": "Connector:Conn_01x02_Pin",
+      "type": "Connector",
+      "footprint": "Connector_AMASS:AMASS_XT60-M_1x02_P7.20mm_Vertical"
+    },
+    {
+      "ref": "Q1",
+      "value": "2SC1815",
+      "lib_id": "Transistor_BJT:2SC1815",
+      "type": "Transistor",
+      "footprint": "Package_TO_SOT_THT:TO-92_Inline"
+    },
+    {
+      "ref": "Q2",
+      "value": "BC109",
+      "lib_id": "Transistor_BJT:BC109",
+      "type": "Transistor",
+      "footprint": "Package_TO_SOT_THT:TO-18-3"
+    },
+    {
+      "ref": "Q3",
+      "value": "2SD600",
+      "lib_id": "Transistor_BJT:2SD600",
+      "type": "Transistor",
+      "footprint": "Package_TO_SOT_THT:TO-126-3_Vertical"
+    },
+    {
+      "ref": "Q4",
+      "value": "2N3904",
+      "lib_id": "Transistor_BJT:2N3904",
+      "type": "Transistor",
+      "footprint": "Package_TO_SOT_THT:TO-92_Wide"
+    }
+  ]
+}

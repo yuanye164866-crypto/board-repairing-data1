@@ -1,0 +1,722 @@
+{
+  "pads": [
+    {
+      "ref": "J1",
+      "pin": "1",
+      "node": "J1.1",
+      "net": "Net-(J1-Pin_1)",
+      "side": "both",
+      "type": "thru_hole",
+      "shape": "roundrect",
+      "x": 93.625,
+      "y": 51.43,
+      "rotation": 0.0,
+      "size": [
+        5.2,
+        5.2
+      ],
+      "drill": [
+        4.5,
+        4.5
+      ],
+      "layers": "*.Cu *.Mask"
+    },
+    {
+      "ref": "J1",
+      "pin": "2",
+      "node": "J1.2",
+      "net": "GND",
+      "side": "both",
+      "type": "thru_hole",
+      "shape": "circle",
+      "x": 100.825,
+      "y": 51.43,
+      "rotation": 0.0,
+      "size": [
+        5.2,
+        5.2
+      ],
+      "drill": [
+        4.5,
+        4.5
+      ],
+      "layers": "*.Cu *.Mask"
+    },
+    {
+      "ref": "Q1",
+      "pin": "1",
+      "node": "Q1.1",
+      "net": "Net-(Q1-E)",
+      "side": "both",
+      "type": "thru_hole",
+      "shape": "rect",
+      "x": 90.5,
+      "y": 61.0,
+      "rotation": 90.0,
+      "size": [
+        1.05,
+        1.45
+      ],
+      "drill": [
+        0.75,
+        0.75
+      ],
+      "layers": "*.Cu *.Mask"
+    },
+    {
+      "ref": "Q1",
+      "pin": "2",
+      "node": "Q1.2",
+      "net": "Net-(Q1-C)",
+      "side": "both",
+      "type": "thru_hole",
+      "shape": "oval",
+      "x": 90.5,
+      "y": 62.27,
+      "rotation": 90.0,
+      "size": [
+        1.05,
+        1.45
+      ],
+      "drill": [
+        0.75,
+        0.75
+      ],
+      "layers": "*.Cu *.Mask"
+    },
+    {
+      "ref": "Q1",
+      "pin": "3",
+      "node": "Q1.3",
+      "net": "Net-(J1-Pin_1)",
+      "side": "both",
+      "type": "thru_hole",
+      "shape": "oval",
+      "x": 90.5,
+      "y": 63.54,
+      "rotation": 90.0,
+      "size": [
+        1.05,
+        1.45
+      ],
+      "drill": [
+        0.75,
+        0.75
+      ],
+      "layers": "*.Cu *.Mask"
+    },
+    {
+      "ref": "Q2",
+      "pin": "1",
+      "node": "Q2.1",
+      "net": "Net-(Q2-E)",
+      "side": "both",
+      "type": "thru_hole",
+      "shape": "oval",
+      "x": 102.5,
+      "y": 59.73,
+      "rotation": 270.0,
+      "size": [
+        1.4,
+        1.2
+      ],
+      "drill": [
+        0.7,
+        0.7
+      ],
+      "layers": "*.Cu *.Mask"
+    },
+    {
+      "ref": "Q2",
+      "pin": "2",
+      "node": "Q2.2",
+      "net": "Net-(Q1-C)",
+      "side": "both",
+      "type": "thru_hole",
+      "shape": "circle",
+      "x": 103.77,
+      "y": 58.46,
+      "rotation": 270.0,
+      "size": [
+        1.2,
+        1.2
+      ],
+      "drill": [
+        0.7,
+        0.7
+      ],
+      "layers": "*.Cu *.Mask"
+    },
+    {
+      "ref": "Q2",
+      "pin": "3",
+      "node": "Q2.3",
+      "net": "Net-(Q2-C)",
+      "side": "both",
+      "type": "thru_hole",
+      "shape": "circle",
+      "x": 102.5,
+      "y": 57.19,
+      "rotation": 270.0,
+      "size": [
+        1.2,
+        1.2
+      ],
+      "drill": [
+        0.7,
+        0.7
+      ],
+      "layers": "*.Cu *.Mask"
+    },
+    {
+      "ref": "Q3",
+      "pin": "1",
+      "node": "Q3.1",
+      "net": "GND",
+      "side": "both",
+      "type": "thru_hole",
+      "shape": "rect",
+      "x": 89.72,
+      "y": 67.125,
+      "rotation": 0.0,
+      "size": [
+        1.7,
+        1.7
+      ],
+      "drill": [
+        1.0,
+        1.0
+      ],
+      "layers": "*.Cu *.Mask"
+    },
+    {
+      "ref": "Q3",
+      "pin": "2",
+      "node": "Q3.2",
+      "net": "Net-(Q2-E)",
+      "side": "both",
+      "type": "thru_hole",
+      "shape": "oval",
+      "x": 92.0,
+      "y": 67.125,
+      "rotation": 0.0,
+      "size": [
+        1.7,
+        1.7
+      ],
+      "drill": [
+        1.0,
+        1.0
+      ],
+      "layers": "*.Cu *.Mask"
+    },
+    {
+      "ref": "Q3",
+      "pin": "3",
+      "node": "Q3.3",
+      "net": "Net-(Q1-E)",
+      "side": "both",
+      "type": "thru_hole",
+      "shape": "oval",
+      "x": 94.28,
+      "y": 67.125,
+      "rotation": 0.0,
+      "size": [
+        1.7,
+        1.7
+      ],
+      "drill": [
+        1.0,
+        1.0
+      ],
+      "layers": "*.Cu *.Mask"
+    },
+    {
+      "ref": "Q4",
+      "pin": "1",
+      "node": "Q4.1",
+      "net": "Net-(Q2-E)",
+      "side": "both",
+      "type": "thru_hole",
+      "shape": "rect",
+      "x": 104.04,
+      "y": 72.54,
+      "rotation": 90.0,
+      "size": [
+        1.5,
+        1.5
+      ],
+      "drill": [
+        0.8,
+        0.8
+      ],
+      "layers": "*.Cu *.Mask"
+    },
+    {
+      "ref": "Q4",
+      "pin": "2",
+      "node": "Q4.2",
+      "net": "Net-(Q2-C)",
+      "side": "both",
+      "type": "thru_hole",
+      "shape": "circle",
+      "x": 106.58,
+      "y": 75.08,
+      "rotation": 90.0,
+      "size": [
+        1.5,
+        1.5
+      ],
+      "drill": [
+        0.8,
+        0.8
+      ],
+      "layers": "*.Cu *.Mask"
+    },
+    {
+      "ref": "Q4",
+      "pin": "3",
+      "node": "Q4.3",
+      "net": "GND",
+      "side": "both",
+      "type": "thru_hole",
+      "shape": "circle",
+      "x": 104.04,
+      "y": 77.62,
+      "rotation": 90.0,
+      "size": [
+        1.5,
+        1.5
+      ],
+      "drill": [
+        0.8,
+        0.8
+      ],
+      "layers": "*.Cu *.Mask"
+    }
+  ],
+  "segments": [
+    {
+      "start": [
+        93.625,
+        55.335
+      ],
+      "end": [
+        90.5,
+        58.46
+      ],
+      "width": 1.0,
+      "layer": "F.Cu",
+      "net": "Net-(J1-Pin_1)"
+    },
+    {
+      "start": [
+        93.625,
+        51.43
+      ],
+      "end": [
+        93.625,
+        55.335
+      ],
+      "width": 1.0,
+      "layer": "F.Cu",
+      "net": "Net-(J1-Pin_1)"
+    },
+    {
+      "start": [
+        100.825,
+        51.43
+      ],
+      "end": [
+        105.93,
+        51.43
+      ],
+      "width": 1.0,
+      "layer": "F.Cu",
+      "net": "GND"
+    },
+    {
+      "start": [
+        107.5,
+        75.0
+      ],
+      "end": [
+        109.5,
+        73.0
+      ],
+      "width": 1.0,
+      "layer": "F.Cu",
+      "net": "GND"
+    },
+    {
+      "start": [
+        107.5,
+        64.0
+      ],
+      "end": [
+        104.04,
+        67.46
+      ],
+      "width": 1.0,
+      "layer": "F.Cu",
+      "net": "GND"
+    },
+    {
+      "start": [
+        89.72,
+        71.22
+      ],
+      "end": [
+        93.5,
+        75.0
+      ],
+      "width": 1.0,
+      "layer": "F.Cu",
+      "net": "GND"
+    },
+    {
+      "start": [
+        107.5,
+        53.0
+      ],
+      "end": [
+        107.5,
+        63.5
+      ],
+      "width": 1.0,
+      "layer": "F.Cu",
+      "net": "GND"
+    },
+    {
+      "start": [
+        89.72,
+        67.125
+      ],
+      "end": [
+        89.72,
+        71.22
+      ],
+      "width": 1.0,
+      "layer": "F.Cu",
+      "net": "GND"
+    },
+    {
+      "start": [
+        105.93,
+        51.43
+      ],
+      "end": [
+        107.5,
+        53.0
+      ],
+      "width": 1.0,
+      "layer": "F.Cu",
+      "net": "GND"
+    },
+    {
+      "start": [
+        109.5,
+        65.5
+      ],
+      "end": [
+        107.5,
+        63.5
+      ],
+      "width": 1.0,
+      "layer": "F.Cu",
+      "net": "GND"
+    },
+    {
+      "start": [
+        107.5,
+        63.5
+      ],
+      "end": [
+        107.5,
+        64.0
+      ],
+      "width": 1.0,
+      "layer": "F.Cu",
+      "net": "GND"
+    },
+    {
+      "start": [
+        93.5,
+        75.0
+      ],
+      "end": [
+        107.5,
+        75.0
+      ],
+      "width": 1.0,
+      "layer": "F.Cu",
+      "net": "GND"
+    },
+    {
+      "start": [
+        109.5,
+        73.0
+      ],
+      "end": [
+        109.5,
+        65.5
+      ],
+      "width": 1.0,
+      "layer": "F.Cu",
+      "net": "GND"
+    },
+    {
+      "start": [
+        94.28,
+        67.125
+      ],
+      "end": [
+        94.28,
+        63.78
+      ],
+      "width": 1.0,
+      "layer": "F.Cu",
+      "net": "Net-(Q1-E)"
+    },
+    {
+      "start": [
+        94.28,
+        63.78
+      ],
+      "end": [
+        93.5,
+        63.0
+      ],
+      "width": 1.0,
+      "layer": "F.Cu",
+      "net": "Net-(Q1-E)"
+    },
+    {
+      "start": [
+        90.5,
+        61.0
+      ],
+      "end": [
+        92.5,
+        63.0
+      ],
+      "width": 1.0,
+      "layer": "F.Cu",
+      "net": "Net-(Q1-E)"
+    },
+    {
+      "start": [
+        92.5,
+        63.0
+      ],
+      "end": [
+        93.5,
+        63.0
+      ],
+      "width": 1.0,
+      "layer": "F.Cu",
+      "net": "Net-(Q1-E)"
+    },
+    {
+      "start": [
+        96.5,
+        61.0
+      ],
+      "end": [
+        101.23,
+        61.0
+      ],
+      "width": 1.0,
+      "layer": "F.Cu",
+      "net": "Net-(Q1-C)"
+    },
+    {
+      "start": [
+        95.23,
+        59.73
+      ],
+      "end": [
+        96.5,
+        61.0
+      ],
+      "width": 1.0,
+      "layer": "F.Cu",
+      "net": "Net-(Q1-C)"
+    },
+    {
+      "start": [
+        90.5,
+        59.73
+      ],
+      "end": [
+        95.23,
+        59.73
+      ],
+      "width": 1.0,
+      "layer": "F.Cu",
+      "net": "Net-(Q1-C)"
+    },
+    {
+      "start": [
+        92.0,
+        65.5
+      ],
+      "end": [
+        97.8,
+        59.7
+      ],
+      "width": 1.0,
+      "layer": "B.Cu",
+      "net": "Net-(Q2-E)"
+    },
+    {
+      "start": [
+        97.8,
+        59.7
+      ],
+      "end": [
+        102.47,
+        59.7
+      ],
+      "width": 1.0,
+      "layer": "B.Cu",
+      "net": "Net-(Q2-E)"
+    },
+    {
+      "start": [
+        102.5,
+        59.73
+      ],
+      "end": [
+        104.23,
+        59.73
+      ],
+      "width": 1.0,
+      "layer": "B.Cu",
+      "net": "Net-(Q2-E)"
+    },
+    {
+      "start": [
+        92.0,
+        67.125
+      ],
+      "end": [
+        92.0,
+        65.5
+      ],
+      "width": 1.0,
+      "layer": "B.Cu",
+      "net": "Net-(Q2-E)"
+    },
+    {
+      "start": [
+        104.96,
+        72.54
+      ],
+      "end": [
+        104.04,
+        72.54
+      ],
+      "width": 1.0,
+      "layer": "B.Cu",
+      "net": "Net-(Q2-E)"
+    },
+    {
+      "start": [
+        107.0,
+        70.5
+      ],
+      "end": [
+        104.96,
+        72.54
+      ],
+      "width": 1.0,
+      "layer": "B.Cu",
+      "net": "Net-(Q2-E)"
+    },
+    {
+      "start": [
+        107.0,
+        62.5
+      ],
+      "end": [
+        107.0,
+        70.5
+      ],
+      "width": 1.0,
+      "layer": "B.Cu",
+      "net": "Net-(Q2-E)"
+    },
+    {
+      "start": [
+        102.47,
+        59.7
+      ],
+      "end": [
+        102.5,
+        59.73
+      ],
+      "width": 1.0,
+      "layer": "B.Cu",
+      "net": "Net-(Q2-E)"
+    },
+    {
+      "start": [
+        104.23,
+        59.73
+      ],
+      "end": [
+        107.0,
+        62.5
+      ],
+      "width": 1.0,
+      "layer": "B.Cu",
+      "net": "Net-(Q2-E)"
+    },
+    {
+      "start": [
+        99.5,
+        68.0
+      ],
+      "end": [
+        99.5,
+        65.27
+      ],
+      "width": 1.0,
+      "layer": "F.Cu",
+      "net": "Net-(Q2-C)"
+    },
+    {
+      "start": [
+        99.5,
+        65.27
+      ],
+      "end": [
+        102.5,
+        62.27
+      ],
+      "width": 1.0,
+      "layer": "F.Cu",
+      "net": "Net-(Q2-C)"
+    },
+    {
+      "start": [
+        101.5,
+        70.0
+      ],
+      "end": [
+        99.5,
+        68.0
+      ],
+      "width": 1.0,
+      "layer": "F.Cu",
+      "net": "Net-(Q2-C)"
+    }
+  ],
+  "vias": [],
+  "zones": [],
+  "outline": {
+    "bbox": [],
+    "point_count": 0
+  }
+}

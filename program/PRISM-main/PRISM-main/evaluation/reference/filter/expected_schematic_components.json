@@ -1,0 +1,54 @@
+{
+  "source_schematic": "Dataset/Filter/Filter/Filter.kicad_sch",
+  "components": [
+    {
+      "ref": "C1",
+      "value": "20mF",
+      "lib_id": "Device:C",
+      "type": "Capacitor",
+      "footprint": "Capacitor_THT:CP_Radial_Tantal_D8.0mm_P5.00mm"
+    },
+    {
+      "ref": "C2",
+      "value": "470pF",
+      "lib_id": "Device:C",
+      "type": "Capacitor",
+      "footprint": "Capacitor_THT:C_Rect_L9.0mm_W4.9mm_P7.50mm_MKT"
+    },
+    {
+      "ref": "J1",
+      "value": "Conn_01x04",
+      "lib_id": "Connector_Generic:Conn_01x04",
+      "type": "Connector",
+      "footprint": "Connector_Wire:SolderWire-0.5sqmm_1x04_P4.8mm_D0.9mm_OD2.3mm"
+    },
+    {
+      "ref": "J2",
+      "value": "Conn_01x04",
+      "lib_id": "Connector_Generic:Conn_01x04",
+      "type": "Connector",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal"
+    },
+    {
+      "ref": "L1",
+      "value": "20nH",
+      "lib_id": "Device:L",
+      "type": "Inductor",
+      "footprint": "Inductor_THT:L_Axial_L20.0mm_D8.0mm_P7.62mm_Vertical"
+    },
+    {
+      "ref": "L2",
+      "value": "330mH",
+      "lib_id": "Device:L",
+      "type": "Inductor",
+      "footprint": "Inductor_THT:L_Axial_L29.9mm_D14.0mm_P38.00mm_Horizontal_Vishay_IHA-105"
+    },
+    {
+      "ref": "R1",
+      "value": "100R",
+      "lib_id": "Device:R",
+      "type": "Resistor",
+      "footprint": "Resistor_THT:R_Axial_Power_L20.0mm_W6.4mm_P25.40mm"
+    }
+  ]
+}

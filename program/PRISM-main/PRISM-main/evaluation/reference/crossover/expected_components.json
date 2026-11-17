@@ -1,0 +1,106 @@
+{
+  "components": [
+    {
+      "ref": "C1",
+      "value": "100pF",
+      "footprint": "Capacitor_THT:C_Radial_D16.0mm_H25.0mm_P7.50mm",
+      "x": 114.75,
+      "y": 101.0,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(D2-K)",
+        "2": "Net-(D2-A)"
+      },
+      "pads": [
+        "C1.1",
+        "C1.2"
+      ]
+    },
+    {
+      "ref": "C2",
+      "value": "22nF",
+      "footprint": "Capacitor_THT:C_Radial_D12.5mm_H25.0mm_P5.00mm",
+      "x": 73.5,
+      "y": 54.0,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(D1-A)",
+        "2": "Net-(D1-K)"
+      },
+      "pads": [
+        "C2.1",
+        "C2.2"
+      ]
+    },
+    {
+      "ref": "D1",
+      "value": "D",
+      "footprint": "Diode_THT:D_5KP_P12.70mm_Horizontal",
+      "x": 78.5,
+      "y": 104.35,
+      "rotation": 90.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(D1-K)",
+        "2": "Net-(D1-A)"
+      },
+      "pads": [
+        "D1.1",
+        "D1.2"
+      ]
+    },
+    {
+      "ref": "D2",
+      "value": "D",
+      "footprint": "Diode_THT:D_5KP_P12.70mm_Horizontal",
+      "x": 108.15,
+      "y": 81.5,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(D2-K)",
+        "2": "Net-(D2-A)"
+      },
+      "pads": [
+        "D2.1",
+        "D2.2"
+      ]
+    },
+    {
+      "ref": "R1",
+      "value": "100R",
+      "footprint": "Resistor_THT:R_Axial_Power_L20.0mm_W6.4mm_P22.40mm",
+      "x": 99.3,
+      "y": 54.0,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(D1-K)",
+        "2": "Net-(D2-A)"
+      },
+      "pads": [
+        "R1.1",
+        "R1.2"
+      ]
+    },
+    {
+      "ref": "R2",
+      "value": "10K",
+      "footprint": "Resistor_THT:R_Axial_Power_L20.0mm_W6.4mm_P22.40mm",
+      "x": 95.7,
+      "y": 79.5,
+      "rotation": 180.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(D2-K)",
+        "2": "Net-(D1-A)"
+      },
+      "pads": [
+        "R2.1",
+        "R2.2"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "source_schematic": "Dataset/Cascade/Cascade/Cascade.kicad_sch",
+  "components": [
+    {
+      "ref": "D1",
+      "value": "LED",
+      "lib_id": "Device:LED",
+      "type": "Diode",
+      "footprint": "LED_THT:LED_D3.0mm"
+    },
+    {
+      "ref": "D2",
+      "value": "LED",
+      "lib_id": "Device:LED",
+      "type": "Diode",
+      "footprint": "LED_THT:LED_D3.0mm"
+    },
+    {
+      "ref": "D3",
+      "value": "LED",
+      "lib_id": "Device:LED",
+      "type": "Diode",
+      "footprint": "LED_THT:LED_D3.0mm"
+    },
+    {
+      "ref": "D4",
+      "value": "LED",
+      "lib_id": "Device:LED",
+      "type": "Diode",
+      "footprint": "LED_THT:LED_D3.0mm"
+    },
+    {
+      "ref": "D5",
+      "value": "LED",
+      "lib_id": "Device:LED",
+      "type": "Diode",
+      "footprint": "LED_THT:LED_D3.0mm"
+    },
+    {
+      "ref": "D6",
+      "value": "LED",
+      "lib_id": "Device:LED",
+      "type": "Diode",
+      "footprint": "LED_THT:LED_D3.0mm"
+    },
+    {
+      "ref": "D7",
+      "value": "LED",
+      "lib_id": "Device:LED",
+      "type": "Diode",
+      "footprint": "LED_THT:LED_D3.0mm"
+    },
+    {
+      "ref": "D8",
+      "value": "LED",
+      "lib_id": "Device:LED",
+      "type": "Diode",
+      "footprint": "LED_THT:LED_D3.0mm"
+    },
+    {
+      "ref": "D9",
+      "value": "LED",
+      "lib_id": "Device:LED",
+      "type": "Diode",
+      "footprint": "LED_THT:LED_D3.0mm"
+    },
+    {
+      "ref": "J1",
+      "value": "Conn_01x10_Pin",
+      "lib_id": "Connector:Conn_01x10_Pin",
+      "type": "Connector",
+      "footprint": "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_10-G_1x10_P5.00mm_Horizontal"
+    },
+    {
+      "ref": "R1",
+      "value": "220R",
+      "lib_id": "Device:R",
+      "type": "Resistor",
+      "footprint": "Resistor_THT:R_Axial_DIN0614_L14.3mm_D5.7mm_P20.32mm_Horizontal"
+    },
+    {
+      "ref": "R2",
+      "value": "220R",
+      "lib_id": "Device:R",
+      "type": "Resistor",
+      "footprint": "Resistor_THT:R_Axial_DIN0614_L14.3mm_D5.7mm_P20.32mm_Horizontal"
+    },
+    {
+      "ref": "R3",
+      "value": "220R",
+      "lib_id": "Device:R",
+      "type": "Resistor",
+      "footprint": "Resistor_THT:R_Axial_DIN0614_L14.3mm_D5.7mm_P20.32mm_Horizontal"
+    },
+    {
+      "ref": "R4",
+      "value": "220R",
+      "lib_id": "Device:R",
+      "type": "Resistor",
+      "footprint": "Resistor_THT:R_Axial_DIN0614_L14.3mm_D5.7mm_P20.32mm_Horizontal"
+    },
+    {
+      "ref": "R5",
+      "value": "220R",
+      "lib_id": "Device:R",
+      "type": "Resistor",
+      "footprint": "Resistor_THT:R_Axial_DIN0614_L14.3mm_D5.7mm_P20.32mm_Horizontal"
+    },
+    {
+      "ref": "R6",
+      "value": "220R",
+      "lib_id": "Device:R",
+      "type": "Resistor",
+      "footprint": "Resistor_THT:R_Axial_DIN0614_L14.3mm_D5.7mm_P20.32mm_Horizontal"
+    },
+    {
+      "ref": "R7",
+      "value": "220R",
+      "lib_id": "Device:R",
+      "type": "Resistor",
+      "footprint": "Resistor_THT:R_Axial_DIN0614_L14.3mm_D5.7mm_P20.32mm_Horizontal"
+    },
+    {
+      "ref": "R8",
+      "value": "220R",
+      "lib_id": "Device:R",
+      "type": "Resistor",
+      "footprint": "Resistor_THT:R_Axial_DIN0614_L14.3mm_D5.7mm_P20.32mm_Horizontal"
+    },
+    {
+      "ref": "R9",
+      "value": "220R",
+      "lib_id": "Device:R",
+      "type": "Resistor",
+      "footprint": "Resistor_THT:R_Axial_DIN0614_L14.3mm_D5.7mm_P20.32mm_Horizontal"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "components": [
+    {
+      "ref": "C1",
+      "value": "100pF",
+      "footprint": "Capacitor_THT:C_Radial_D12.5mm_H20.0mm_P5.00mm",
+      "x": 88.0,
+      "y": 67.0,
+      "rotation": -90.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(D1-A)",
+        "2": "GND"
+      },
+      "pads": [
+        "C1.1",
+        "C1.2"
+      ]
+    },
+    {
+      "ref": "D1",
+      "value": "D",
+      "footprint": "Diode_THT:D_DO-201_P15.24mm_Horizontal",
+      "x": 92.62,
+      "y": 28.0,
+      "rotation": 180.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(D1-K)",
+        "2": "Net-(D1-A)"
+      },
+      "pads": [
+        "D1.1",
+        "D1.2"
+      ]
+    },
+    {
+      "ref": "J1",
+      "value": "Conn_01x02_Pin",
+      "footprint": "Connector_PinSocket_2.00mm:PinSocket_1x02_P2.00mm_Vertical",
+      "x": 74.0,
+      "y": 77.0,
+      "rotation": 90.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "-9V",
+        "2": "GND"
+      },
+      "pads": [
+        "J1.1",
+        "J1.2"
+      ]
+    },
+    {
+      "ref": "Q1",
+      "value": "Q_PNP",
+      "footprint": "Package_TO_SOT_THT:TO-92L_Wide",
+      "x": 111.15,
+      "y": 61.45,
+      "rotation": -90.0,
+      "pin_count": 3,
+      "pins": {
+        "1": "Net-(D1-K)",
+        "2": "Net-(D1-A)",
+        "3": "GND"
+      },
+      "pads": [
+        "Q1.1",
+        "Q1.2",
+        "Q1.3"
+      ]
+    },
+    {
+      "ref": "R1",
+      "value": "100R",
+      "footprint": "Resistor_THT:R_Axial_DIN0614_L14.3mm_D5.7mm_P25.40mm_Horizontal",
+      "x": 63.5,
+      "y": 64.7,
+      "rotation": 90.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "-9V",
+        "2": "Net-(D1-A)"
+      },
+      "pads": [
+        "R1.1",
+        "R1.2"
+      ]
+    },
+    {
+      "ref": "R2",
+      "value": "50R",
+      "footprint": "Resistor_THT:R_Axial_Power_L25.0mm_W9.0mm_P30.48mm",
+      "x": 82.755,
+      "y": 49.0,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(D1-A)",
+        "2": "Net-(D1-K)"
+      },
+      "pads": [
+        "R2.1",
+        "R2.2"
+      ]
+    }
+  ]
+}

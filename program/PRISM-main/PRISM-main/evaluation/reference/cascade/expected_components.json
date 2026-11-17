@@ -1,0 +1,343 @@
+{
+  "components": [
+    {
+      "ref": "D1",
+      "value": "LED",
+      "footprint": "LED_THT:LED_D3.0mm",
+      "x": 45.64,
+      "y": 19.5,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(D1-K)",
+        "2": "Net-(D1-A)"
+      },
+      "pads": [
+        "D1.1",
+        "D1.2"
+      ]
+    },
+    {
+      "ref": "D2",
+      "value": "LED",
+      "footprint": "LED_THT:LED_D3.0mm",
+      "x": 45.64,
+      "y": 28.0,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(D2-K)",
+        "2": "Net-(D1-K)"
+      },
+      "pads": [
+        "D2.1",
+        "D2.2"
+      ]
+    },
+    {
+      "ref": "D3",
+      "value": "LED",
+      "footprint": "LED_THT:LED_D3.0mm",
+      "x": 45.64,
+      "y": 36.5,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(D3-K)",
+        "2": "Net-(D2-K)"
+      },
+      "pads": [
+        "D3.1",
+        "D3.2"
+      ]
+    },
+    {
+      "ref": "D4",
+      "value": "LED",
+      "footprint": "LED_THT:LED_D3.0mm",
+      "x": 45.68,
+      "y": 45.0,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(D4-K)",
+        "2": "Net-(D3-K)"
+      },
+      "pads": [
+        "D4.1",
+        "D4.2"
+      ]
+    },
+    {
+      "ref": "D5",
+      "value": "LED",
+      "footprint": "LED_THT:LED_D3.0mm",
+      "x": 45.68,
+      "y": 53.5,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(D5-K)",
+        "2": "Net-(D4-K)"
+      },
+      "pads": [
+        "D5.1",
+        "D5.2"
+      ]
+    },
+    {
+      "ref": "D6",
+      "value": "LED",
+      "footprint": "LED_THT:LED_D3.0mm",
+      "x": 45.68,
+      "y": 62.0,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(D6-K)",
+        "2": "Net-(D5-K)"
+      },
+      "pads": [
+        "D6.1",
+        "D6.2"
+      ]
+    },
+    {
+      "ref": "D7",
+      "value": "LED",
+      "footprint": "LED_THT:LED_D3.0mm",
+      "x": 45.64,
+      "y": 71.0,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(D7-K)",
+        "2": "Net-(D6-K)"
+      },
+      "pads": [
+        "D7.1",
+        "D7.2"
+      ]
+    },
+    {
+      "ref": "D8",
+      "value": "LED",
+      "footprint": "LED_THT:LED_D3.0mm",
+      "x": 45.64,
+      "y": 79.5,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(D8-K)",
+        "2": "Net-(D7-K)"
+      },
+      "pads": [
+        "D8.1",
+        "D8.2"
+      ]
+    },
+    {
+      "ref": "D9",
+      "value": "LED",
+      "footprint": "LED_THT:LED_D3.0mm",
+      "x": 45.64,
+      "y": 88.0,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(D9-K)",
+        "2": "Net-(D8-K)"
+      },
+      "pads": [
+        "D9.1",
+        "D9.2"
+      ]
+    },
+    {
+      "ref": "J1",
+      "value": "Conn_01x10_Pin",
+      "footprint": "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_10-G_1x10_P5.00mm_Horizontal",
+      "x": 30.68,
+      "y": 24.5,
+      "rotation": -90.0,
+      "pin_count": 10,
+      "pins": {
+        "1": "Net-(D1-K)",
+        "2": "Net-(D2-K)",
+        "3": "Net-(D3-K)",
+        "4": "Net-(D4-K)",
+        "5": "Net-(D5-K)",
+        "6": "Net-(D6-K)",
+        "7": "Net-(D7-K)",
+        "8": "Net-(D8-K)",
+        "9": "Net-(D9-K)",
+        "10": "Net-(J1-Pin_10)"
+      },
+      "pads": [
+        "J1.1",
+        "J1.2",
+        "J1.3",
+        "J1.4",
+        "J1.5",
+        "J1.6",
+        "J1.7",
+        "J1.8",
+        "J1.9",
+        "J1.10"
+      ]
+    },
+    {
+      "ref": "R1",
+      "value": "220R",
+      "footprint": "Resistor_THT:R_Axial_DIN0614_L14.3mm_D5.7mm_P20.32mm_Horizontal",
+      "x": 57.18,
+      "y": 19.5,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(D1-A)",
+        "2": "Net-(J1-Pin_10)"
+      },
+      "pads": [
+        "R1.1",
+        "R1.2"
+      ]
+    },
+    {
+      "ref": "R2",
+      "value": "220R",
+      "footprint": "Resistor_THT:R_Axial_DIN0614_L14.3mm_D5.7mm_P20.32mm_Horizontal",
+      "x": 57.18,
+      "y": 28.0,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(D1-K)",
+        "2": "Net-(J1-Pin_10)"
+      },
+      "pads": [
+        "R2.1",
+        "R2.2"
+      ]
+    },
+    {
+      "ref": "R3",
+      "value": "220R",
+      "footprint": "Resistor_THT:R_Axial_DIN0614_L14.3mm_D5.7mm_P20.32mm_Horizontal",
+      "x": 57.18,
+      "y": 36.5,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(D2-K)",
+        "2": "Net-(J1-Pin_10)"
+      },
+      "pads": [
+        "R3.1",
+        "R3.2"
+      ]
+    },
+    {
+      "ref": "R4",
+      "value": "220R",
+      "footprint": "Resistor_THT:R_Axial_DIN0614_L14.3mm_D5.7mm_P20.32mm_Horizontal",
+      "x": 57.18,
+      "y": 45.0,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(D3-K)",
+        "2": "Net-(J1-Pin_10)"
+      },
+      "pads": [
+        "R4.1",
+        "R4.2"
+      ]
+    },
+    {
+      "ref": "R5",
+      "value": "220R",
+      "footprint": "Resistor_THT:R_Axial_DIN0614_L14.3mm_D5.7mm_P20.32mm_Horizontal",
+      "x": 57.18,
+      "y": 53.5,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(D4-K)",
+        "2": "Net-(J1-Pin_10)"
+      },
+      "pads": [
+        "R5.1",
+        "R5.2"
+      ]
+    },
+    {
+      "ref": "R6",
+      "value": "220R",
+      "footprint": "Resistor_THT:R_Axial_DIN0614_L14.3mm_D5.7mm_P20.32mm_Horizontal",
+      "x": 57.18,
+      "y": 62.0,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(D5-K)",
+        "2": "Net-(J1-Pin_10)"
+      },
+      "pads": [
+        "R6.1",
+        "R6.2"
+      ]
+    },
+    {
+      "ref": "R7",
+      "value": "220R",
+      "footprint": "Resistor_THT:R_Axial_DIN0614_L14.3mm_D5.7mm_P20.32mm_Horizontal",
+      "x": 57.18,
+      "y": 71.0,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(D6-K)",
+        "2": "Net-(J1-Pin_10)"
+      },
+      "pads": [
+        "R7.1",
+        "R7.2"
+      ]
+    },
+    {
+      "ref": "R8",
+      "value": "220R",
+      "footprint": "Resistor_THT:R_Axial_DIN0614_L14.3mm_D5.7mm_P20.32mm_Horizontal",
+      "x": 57.18,
+      "y": 79.5,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(D7-K)",
+        "2": "Net-(J1-Pin_10)"
+      },
+      "pads": [
+        "R8.1",
+        "R8.2"
+      ]
+    },
+    {
+      "ref": "R9",
+      "value": "220R",
+      "footprint": "Resistor_THT:R_Axial_DIN0614_L14.3mm_D5.7mm_P20.32mm_Horizontal",
+      "x": 57.18,
+      "y": 88.0,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(D8-K)",
+        "2": "Net-(J1-Pin_10)"
+      },
+      "pads": [
+        "R9.1",
+        "R9.2"
+      ]
+    }
+  ]
+}

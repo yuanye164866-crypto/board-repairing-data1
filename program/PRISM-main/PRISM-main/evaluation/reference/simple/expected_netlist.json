@@ -1,0 +1,19 @@
+{
+  "nets": [
+    {
+      "name": "+5V",
+      "pins": [
+        "R1.1"
+      ],
+      "pin_count": 1
+    },
+    {
+      "name": "GND",
+      "pins": [
+        "R1.2"
+      ],
+      "pin_count": 1
+    }
+  ],
+  "unconnected_pads": []
+}

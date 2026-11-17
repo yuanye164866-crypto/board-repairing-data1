@@ -1,0 +1,37 @@
+{
+  "nets": [
+    {
+      "name": "Net-(C1-Pad1)",
+      "pins": [
+        "C1.1",
+        "L1.2"
+      ],
+      "pin_count": 2
+    },
+    {
+      "name": "Net-(D1-A)",
+      "pins": [
+        "D1.2",
+        "R1.1"
+      ],
+      "pin_count": 2
+    },
+    {
+      "name": "Net-(D1-K)",
+      "pins": [
+        "C1.2",
+        "D1.1"
+      ],
+      "pin_count": 2
+    },
+    {
+      "name": "Net-(L1-Pad1)",
+      "pins": [
+        "L1.1",
+        "R1.2"
+      ],
+      "pin_count": 2
+    }
+  ],
+  "unconnected_pads": []
+}

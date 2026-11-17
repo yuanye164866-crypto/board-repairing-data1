@@ -1,0 +1,111 @@
+{
+  "nets": [
+    {
+      "name": "+9V",
+      "pins": [
+        "C1.1",
+        "C2.1",
+        "D4.1",
+        "D5.1",
+        "R1.2",
+        "R2.2"
+      ],
+      "pin_count": 6
+    },
+    {
+      "name": "GND",
+      "pins": [
+        "D1.1"
+      ],
+      "pin_count": 1
+    },
+    {
+      "name": "Net-(C3-Pad1)",
+      "pins": [
+        "C3.1",
+        "C4.1",
+        "R3.2",
+        "R4.2"
+      ],
+      "pin_count": 4
+    },
+    {
+      "name": "Net-(C3-Pad2)",
+      "pins": [
+        "C3.2",
+        "L2.1",
+        "L3.1"
+      ],
+      "pin_count": 3
+    },
+    {
+      "name": "Net-(C4-Pad2)",
+      "pins": [
+        "C4.2",
+        "C5.2",
+        "L4.1"
+      ],
+      "pin_count": 3
+    },
+    {
+      "name": "Net-(D1-A)",
+      "pins": [
+        "C1.2",
+        "C2.2",
+        "D1.2",
+        "L1.1"
+      ],
+      "pin_count": 4
+    },
+    {
+      "name": "Net-(D2-A)",
+      "pins": [
+        "D2.2",
+        "L1.2",
+        "L2.2"
+      ],
+      "pin_count": 3
+    },
+    {
+      "name": "Net-(D2-K)",
+      "pins": [
+        "D2.1",
+        "D3.1"
+      ],
+      "pin_count": 2
+    },
+    {
+      "name": "Net-(D3-A)",
+      "pins": [
+        "D3.2",
+        "D4.2",
+        "L3.2",
+        "L4.2",
+        "L5.1"
+      ],
+      "pin_count": 5
+    },
+    {
+      "name": "Net-(D5-A)",
+      "pins": [
+        "C5.1",
+        "D5.2",
+        "L5.2",
+        "R5.2"
+      ],
+      "pin_count": 4
+    },
+    {
+      "name": "Net-(R1-Pad1)",
+      "pins": [
+        "R1.1",
+        "R2.1",
+        "R3.1",
+        "R4.1",
+        "R5.1"
+      ],
+      "pin_count": 5
+    }
+  ],
+  "unconnected_pads": []
+}

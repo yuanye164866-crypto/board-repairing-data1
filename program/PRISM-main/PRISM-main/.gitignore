@@ -1,0 +1,13 @@
+/.venv/
+/.venv-build/
+/.agents/
+/.codex/
+/build/
+/dist/
+/results/
+/evaluation/results/
+__pycache__/
+*.egg-info/
+*.py[cod]
+*.spec
+.pytest_cache/

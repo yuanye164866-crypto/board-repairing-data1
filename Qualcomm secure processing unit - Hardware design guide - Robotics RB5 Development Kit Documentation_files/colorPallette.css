@@ -1,0 +1,210 @@
+/* FIX for Safari Issue */
+img[src^="undefined"] {
+  display: none !important;
+}
+body {
+  --qualcomm-blue-default: #2A2AEA;
+  --qualcomm-blue-light: #5E83E2;
+  --qualcomm-blue-dark: #2849D2;
+  --qualcomm-blue-dark-accent: #1C38A6;
+  --snapdragon-red-default: var(--snapdragon-red);
+  /* DEPRECATED: Use --snapdragon-red */
+  --white: #FFFFFF;
+  --light-gray: #F5F6F7;
+  --black: #000000;
+  --medium-dark-gray: #222222;
+  --dark-blue: #020B3F;
+  --gray: #D2D7E1;
+  --purple: #843AFF;
+  --yellow: #F5F032;
+  --bliss-blue: #3500AC;
+  --new-midnight-blue: #180061;
+  --snapdragon-purple: #8E38B9;
+  --power-purple: #6614B9;
+  --gunmetal-1: #677790;
+  --gunmetal: #4A5A75;
+  /* --old colors to handle for existing pages */
+  --midnight: #092643;
+  --nickel: #E9EBEE;
+  --light-blue: #799EFF;
+  --periwinkle-blue-100: rgba(118, 151, 255, 1);
+  --chip-gold: #FFC622;
+  --teal: #4CB8C9;
+  --transparent: rgba(255, 255, 255, 0.08);
+  /* --hover colors to slider arrows for red blue black/gray */
+  --brand-default-light-gray: #BBC0C8;
+  --hover-red: #B8000F;
+  --hover-blue: #00009D;
+  --hover-black: #343436;
+  /* --colors given as per the figma for specific components*/
+  --delicate-gray: #FAFBFC;
+  --rich-black-100: rgb(3, 3, 4);
+  --cobalt-blue-100: rgb(45, 62, 224);
+
+  --lifecycle-background-light: rgba(192, 200, 209, 0.65);
+  --lifecycle-background-dark: rgba(0, 0, 0, 0.35);
+  --lifecycle-text-light: rgba(0, 0, 0, 0.55);
+  --lifecycle-text-dark: rgba(255, 255, 255, 1);
+  --lifecycle-sampling: #EEB204;
+  --lifecycle-active: #368637;
+  --lifecycle-not-for-new-design: #FE8A0E;
+  --lifecycle-end-of-life: #E01B32;
+  --lifecycle-obsolete: rgba(0, 0, 0, 0.95);
+  --lifecycle-in-production: #368637;
+  /** Dragonwing brand colors - start **/
+  --dragonwing-purple: #31017D;
+  --dragonwing-purple-accent1: #180064;
+  --dragonwing-purple-accent2: #00004A;
+  --dragonwing-violet: #5B0CD9;
+  --dragonwing-violet-accent1: #6712DF;
+  --dragonwing-violet-accent2: #8143E5;
+  --dragonwing-gray-1: var(--pale-blue-gray-100);
+  --dragonwing-gray-2: #C0C8D1;
+  --dragonwing-gray-3: #9BA6B1;
+  --dragonwing-gray-4: #56646F;
+  --dragonwing-gray-5: #2F363D;
+  --dragonwing-orange: #FF5F00;
+  --dragonwing-amber: #FF8F29;
+  --dragonwing-lavender: rgba(184, 149, 239, 1);
+
+  --soft-violet-100: rgba(159, 152, 249, 1);
+
+  /** Dragonwing brand colors - end **/
+
+  /** New color set up starts here - Everything above this will be revisited for duplication
+  Please avoid duplicating color definitions in this file **/
+  /** Text colors - Start **/
+  --black-95: rgba(0, 0, 0, 0.95);
+  --black-55: rgba(0, 0, 0, 0.55);
+  --black-50: rgba(0, 0, 0, 0.50);
+  --black-40: rgba(0, 0, 0, 0.40);
+  --black-35: rgba(0, 0, 0, 0.35);
+
+  --white-95: rgba(255, 255, 255, 0.95);
+  --white-80: rgba(255, 255, 255, 0.80);
+  --white-50: rgba(255, 255, 255, 0.50);
+  --white-55: rgba(255, 255, 255, 0.55);
+  --white-60: rgba(255, 255, 255, 0.60);
+  --white-40: rgba(255, 255, 255, 0.40);
+  --white-30: rgba(255, 255, 255, 0.30);
+  /** Text colors - End **/
+
+  /** Background colors - Start **/
+  --white-100: rgba(255, 255, 255, 1);
+  --ghost-white-100: rgba(250, 251, 252, 1);
+  --white-smoke-100: rgba(245, 246, 247, 1);
+  --eerie-black-100: rgba(21, 21, 22, 1);
+  --charleston-green-100: rgba(32, 32, 33, 1);
+  --jet-black-100: rgba(42, 42, 43, 1);
+  --gray-black-100:rgba(48, 48, 49, 1);
+  /** Background colors - End **/
+
+  /** Foreground colors - Start **/
+  --black-100: rgba(0, 0, 0, 1);
+  --black-16: rgba(0, 0, 0, 0.16);
+  --black-30: rgba(0, 0, 0, 0.3);
+  --black-25: rgba(0, 0, 0, 0.25);
+  --raisin-black-100: rgba(10, 10, 10, 1);
+  --night-100: rgba(31, 31, 31, 1);
+  --onyx-100: rgba(48, 48, 49, 1);
+  --dim-gray-100: rgba(54, 54, 55, 1);
+  --dark-charcoal-100: rgba(66, 66, 67, 1);
+  --charcoal-gray-100: rgba(92, 92, 93, 1);
+  --sonic-silver-100: rgba(99, 99, 100, 1);
+  --spanish-gray-100: rgba(148, 148, 149, 1);
+  --philippine-gray-100: rgba(170, 170, 171, 1);
+  --silver-gray-100: rgba(192, 192, 193, 1);
+  --light-silver-gray-100: rgba(200, 200, 201, 1);
+  --gainsboro-100: rgba(223, 223, 224, 1);
+  --lavender-gray-100: rgba(231, 231, 232, 1);
+  --platinum-100: rgba(239, 239, 240, 1);
+  /** Foreground colors - End **/
+
+  /** Border-colors - Start **/
+  --black-15: rgba(0, 0, 0, 0.15);
+  --black-16: rgba(0, 0, 0, 0.16);
+  --black-32: rgba(0, 0, 0, 0.32);
+  --white-8: rgba(255, 255, 255, 0.08);
+  --white-15: rgba(255, 255, 255, 0.15);
+  --white-16: rgba(255, 255, 255, 0.16);
+  --black-8: rgba(0, 0, 0, 0.08);
+  --black-10: rgba(0, 0, 0, 0.10);
+  /**Border-colors - End **/
+
+  /** link blue - Start **/
+  --royal-blue-100: rgba(65, 97, 231, 1);
+  --duke-blue-100: rgba(0, 0, 157, 1);
+  /** link blue - End **/
+
+  --legal-gray-100: rgba(180, 185, 189, 1);
+
+  /** Gray variants - Start **/
+  --ultra-light-gray: var(--white-smoke-100);
+  --ultra-dark-gray: var(--charleston-green-100);
+  --dark-gray: var(--eerie-black-100);
+  /**Gray variants- End **/
+
+  /** Base Color Palette (Theme-Agnostic) - Start **/
+  /* Reds */
+  --crimson-red-100: rgba(231, 19, 36, 1);
+  --scarlet-red-100: rgba(221, 0, 25, 1);
+  --wine-red-100: rgba(146, 0, 29, 1);
+  --deep-maroon-100: rgba(80, 0, 16, 1);
+
+  /* Grays/Neutrals */
+  --pale-blue-gray-100: rgba(220, 226, 233, 1);
+
+  /* Accent Colors */
+  --bright-orange-100: rgba(255, 157, 0, 1);
+  --vivid-purple-100: rgba(162, 0, 237, 1);
+  --cyan-blue-100: rgba(0, 176, 242, 1);
+  --light-lavender-100: rgba(184, 140, 255, 1);
+  --electric-purple-100: rgba(136, 61, 248, 1);
+  /** Base Color Palette (Theme-Agnostic) - End **/
+
+  /** Snapdragon Theme - Start **/
+  --snapdragon-red: var(--crimson-red-100);
+  --snapdragon-dark-red: var(--wine-red-100);
+  --snapdragon-deep-red: var(--deep-maroon-100);
+  --snapdragon-stone: var(--pale-blue-gray-100);
+  --snapdragon-sun: var(--bright-orange-100);
+  --snapdragon-amethyst: var(--vivid-purple-100);
+  --snapdragon-ocean: var(--cyan-blue-100);
+  /** Snapdragon Theme - End **/
+
+  /* Workspace project listing colors */
+  --slate-gray-100: rgba(103, 106, 112, 1);
+  --charcoal-black-100: rgba(21, 21, 21, 1);
+  --medium-gray-100: rgba(113, 113, 113, 1);
+  --light-silver-100: rgba(220, 222, 225, 1);
+  --ice-blue-100: rgba(242, 245, 252, 1);
+
+  /* Workspace Project details colors */
+  --silver-blue-100: rgba(202, 206, 212, 1);
+  --iron-gray-100: rgba(44, 46, 48, 1);
+  --snow-gray-100: rgba(245, 245, 246, 1);
+  --licorice-100: rgba(26, 26, 26, 1);
+  --cornflower-blue-100: rgba(50, 83, 220, 1);
+
+  /** Dragonfly - start **/
+  --bronze-100: rgba(128, 104, 50, 1);
+  --navy-blue-100: rgba(0, 43, 111, 1);
+  --charcoal-100: rgba(4, 10, 10, 1);
+  --slate-100: rgba(99, 99, 100, 1);
+
+  --cream-100: rgba(242, 241, 235, 1);
+  --warm-gray-100: rgba(234, 233, 225, 1);
+  --tan-100: rgba(233, 210, 170, 1);
+
+  --dark-gold-100: rgba(137, 98, 0, 1);
+  --dark-brown-100: rgba(95, 69, 32, 1);
+  --espresso-brown-100: rgba(71, 51, 21, 1);
+  --light-brown-8: rgba(129, 96, 50, 0.08);
+  --focus-dark-1:rgba(118, 151, 255, 1);
+  --focus-dragonfly-1:rgba(144, 96, 0, 1);
+  --dark-gold-200: rgba(95, 69, 32, 1);
+  --dark-gold-300: rgba(71, 51, 21, 1);
+  --dark-gold-400: rgba(144, 96, 0, 1);
+  --light-gold-400: rgba(129, 96, 50, 0.08);
+  /** Dragonfly - end **/
+}

@@ -1,0 +1,33 @@
+{
+  "source_schematic": "Dataset/Floating/Floating/Floating.kicad_sch",
+  "components": [
+    {
+      "ref": "C1",
+      "value": "100uF",
+      "lib_id": "Device:C",
+      "type": "Capacitor",
+      "footprint": "Capacitor_THT:CP_Radial_Tantal_D8.0mm_P2.50mm"
+    },
+    {
+      "ref": "D1",
+      "value": "LED",
+      "lib_id": "Device:LED",
+      "type": "Diode",
+      "footprint": "LED_THT:LED_D10.0mm"
+    },
+    {
+      "ref": "R1",
+      "value": "100R",
+      "lib_id": "Device:R",
+      "type": "Resistor",
+      "footprint": "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
+    },
+    {
+      "ref": "R2",
+      "value": "50R",
+      "lib_id": "Device:R",
+      "type": "Resistor",
+      "footprint": "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical"
+    }
+  ]
+}

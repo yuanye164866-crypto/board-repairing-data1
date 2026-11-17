@@ -1,0 +1,72 @@
+{
+  "components": [
+    {
+      "ref": "J1",
+      "value": "Screw_Terminal_01x02",
+      "footprint": "TerminalBlock_Wuerth:Wuerth_691311400102_P7.62mm",
+      "x": 28.0,
+      "y": 53.0,
+      "rotation": -90.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "GND",
+        "2": "Net-(J1-Pin_2)"
+      },
+      "pads": [
+        "J1.1",
+        "J1.2"
+      ]
+    },
+    {
+      "ref": "J2",
+      "value": "Screw_Terminal_01x02",
+      "footprint": "TerminalBlock_Wuerth:Wuerth_691311400102_P7.62mm",
+      "x": 81.0,
+      "y": 61.0,
+      "rotation": 90.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "VCC",
+        "2": "GND"
+      },
+      "pads": [
+        "J2.1",
+        "J2.2"
+      ]
+    },
+    {
+      "ref": "R1",
+      "value": "100R",
+      "footprint": "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P25.40mm_Horizontal",
+      "x": 66.9,
+      "y": 60.5,
+      "rotation": 180.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "VCC",
+        "2": "Net-(J1-Pin_2)"
+      },
+      "pads": [
+        "R1.1",
+        "R1.2"
+      ]
+    },
+    {
+      "ref": "R2",
+      "value": "470R",
+      "footprint": "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P25.40mm_Horizontal",
+      "x": 66.9,
+      "y": 53.0,
+      "rotation": 180.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "VCC",
+        "2": "GND"
+      },
+      "pads": [
+        "R2.1",
+        "R2.2"
+      ]
+    }
+  ]
+}

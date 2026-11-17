@@ -1,0 +1,263 @@
+how to decrypt the encrypted ext4 partition
+To decrypt an encrypted EXT4 partition, the first thing is to identify how the partition was encrypted. EXT4 itself does not provide whole-partition encryption; commonly, encryption is provided by LUKS/dm-crypt or Android's encryption mechanisms.
+
+Since you're using Windows 11 with Ubuntu WSL2, I'll explain the Linux approach.
+
+1. Identify the encryption type
+Common possibilities:
+
+Encryption type
+
+Description
+
+LUKS / dm-crypt
+
+Linux encrypted partition
+
+Android FDE
+
+Full-disk encryption, commonly dm-crypt
+
+Android FBE
+
+File-based encryption using fscrypt
+
+fscrypt
+
+Directory/file-level encryption on EXT4
+
+2. If it is a LUKS-encrypted EXT4 partition
+You need the following utilities:
+
+sudo apt update
+sudo apt install cryptsetup e2fsprogs
+
+Check the partition:
+
+sudo lsblk -f
+
+Check whether it is LUKS:
+
+sudo cryptsetup luksDump /dev/sdX
+
+Replace /dev/sdX with the actual partition device.
+
+If it is LUKS-encrypted, unlock it using your password:
+
+sudo cryptsetup open /dev/sdX decrypted_ext4
+
+Then identify the decrypted filesystem:
+
+sudo blkid /dev/mapper/decrypted_ext4
+
+If it is EXT4, you can mount it read-only:
+
+sudo mkdir -p /mnt/decrypted
+sudo mount -o ro /dev/mapper/decrypted_ext4 /mnt/decrypted
+
+You can access the decrypted files under /mnt/decrypted.
+
+3. Important: If this is an Android encrypted EXT4 partition
+Android encryption is different from standard LUKS encryption.
+
+You may need:
+
+Android encryption metadata.
+
+The correct encryption key.
+
+The device's encryption implementation.
+
+Compatible Android kernel or userspace tools.
+
+Installing cryptsetup alone will not decrypt Android FBE or all Android FDE partitions.
+
+4. I need three details to give you the exact decryption procedure
+1. Where is the encrypted EXT4 partition?
+
+
+Android phone partition
+
+USB drive or external HDD/SSD
+
+Linux computer HDD/SSD
+
+Raw partition image (.img)
+2. Which encryption method?
+
+
+LUKS / dm-crypt
+
+Android FDE
+
+Android FBE
+
+fscrypt
+
+Not sure
+3. Do you have the encryption key?
+
+
+Yes, I have the password/key
+
+I have a raw encryption key
+
+No, I don't have the key
+
+I can unlock the Android device
+I can then provide the exact Ubuntu WSL2 commands and required tools to access the decrypted EXT4 filesystem without modifying the original partition.
+
+This might also interest you.
+
+
+
+Partition: Android phone partition. Encryption: Android FDE. Key access: I do not have the key. Please provide the appropriate decryption procedure for Ubuntu WSL2.
+If you have an Android phone's encrypted EXT4 /data partition but do not have the encryption key or password, there is an important limitation:
+
+Ubuntu WSL2 cannot independently decrypt the partition without the required encryption key material.
+
+However, there are some legitimate recovery options depending on the phone model and how the encryption was implemented.
+
+1. Understand Android FDE encryption
+Android Full Disk Encryption (FDE) uses:
+
+dm-crypt for block-level encryption.
+
+AES encryption to protect the userdata partition.
+
+An encrypted master key.
+
+A password, PIN, or pattern to protect the master key.
+
+On supported devices, hardware-backed security through the Trusted Execution Environment (TEE).
+
+Android FDE was used primarily on older Android devices. New devices launching with Android 10 or later use FBE instead. 
+
+Android Open Source Project
++2
+
+Connection between PIN/password and encryption keys in Android - Information Security Stack Exchange
+2. What you can do using Ubuntu WSL2
+You can inspect the encrypted partition without modifying it.
+
+Install the diagnostic tools:
+
+sudo apt update
+
+sudo apt install -y \
+    cryptsetup \
+    e2fsprogs \
+    android-sdk-platform-tools \
+    util-linux \
+    file
+
+If you have a raw partition image, for example userdata.img, inspect it:
+
+file userdata.img
+
+Check its partition and filesystem information:
+
+blkid userdata.img
+
+If it is a raw block-device image, inspect its first bytes:
+
+xxd -l 512 userdata.img
+
+You can also inspect the Android encryption metadata or crypto footer if you have the relevant image and know its layout.
+
+Important: Do not run mkfs, fsck -y, cryptsetup luksFormat, or other write operations on your original image.
+
+3. What happens without the encryption key?
+Operation
+
+Possible without key?
+
+Identify partition type
+
+Yes
+
+Read partition metadata
+
+Sometimes
+
+Identify encryption implementation
+
+Often
+
+Recover an unencrypted crypto footer
+
+Sometimes
+
+Mount decrypted EXT4 filesystem
+
+No
+
+Recover encrypted user files
+
+Not without the necessary key
+
+Recover data through the original unlocked phone
+
+Potentially
+
+Android's hardware-backed encryption can prevent offline decryption even when you have a complete copy of the partition. 
+
+Android Git Repositories
++1
+
+4. I need your Android device details
+Before recommending a recovery procedure, I need to identify the device and the source of your partition image.
+
+1. Android phone manufacturer
+
+
+Samsung
+
+Xiaomi / Redmi
+
+OnePlus
+
+Google Pixel
+
+Motorola
+
+Other
+2. Exact phone model
+
+Example: Samsung Galaxy S9
+3. Android version
+
+
+Android 9 or older
+
+Android 10–12
+
+Android 13 or newer
+
+Unknown
+4. What do you have?
+
+
+Raw userdata partition image (.img)
+
+Physical eMMC/UFS chip dump
+
+Complete phone firmware
+
+Physical Android phone only
+5. Phone condition
+
+
+Phone is not accessible
+
+Phone boots and I can unlock it
+
+Phone boots but I cannot unlock it
+
+Phone is damaged
+My recommendation: Don't attempt brute-force decryption or modify the original partition. Preserve a complete read-only copy first. Once I know your phone model and Android version, I can help identify the encryption format, crypto footer location, and whether a legitimate recovery path exists.
+
+
+
+
+

@@ -1,0 +1,26 @@
+{
+  "source_schematic": "Dataset/Meander/Meander/Meander.kicad_sch",
+  "components": [
+    {
+      "ref": "R1",
+      "value": "R",
+      "lib_id": "Device:R",
+      "type": "Resistor",
+      "footprint": "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
+    },
+    {
+      "ref": "R2",
+      "value": "R",
+      "lib_id": "Device:R",
+      "type": "Resistor",
+      "footprint": "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
+    },
+    {
+      "ref": "R3",
+      "value": "R",
+      "lib_id": "Device:R",
+      "type": "Resistor",
+      "footprint": "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
+    }
+  ]
+}

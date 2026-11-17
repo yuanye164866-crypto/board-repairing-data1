@@ -1,0 +1,72 @@
+{
+  "components": [
+    {
+      "ref": "C1",
+      "value": "4.7pF",
+      "footprint": "Capacitor_THT:C_Axial_L12.0mm_D6.5mm_P15.00mm_Horizontal",
+      "x": 55.0,
+      "y": 71.5,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(C1-Pad1)",
+        "2": "Net-(D1-K)"
+      },
+      "pads": [
+        "C1.1",
+        "C1.2"
+      ]
+    },
+    {
+      "ref": "D1",
+      "value": "1N4002",
+      "footprint": "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal",
+      "x": 70.0,
+      "y": 64.58,
+      "rotation": 90.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(D1-K)",
+        "2": "Net-(D1-A)"
+      },
+      "pads": [
+        "D1.1",
+        "D1.2"
+      ]
+    },
+    {
+      "ref": "L1",
+      "value": "3300mH",
+      "footprint": "Inductor_THT:L_Axial_L16.0mm_D9.5mm_P20.32mm_Horizontal_Vishay_IM-10-37",
+      "x": 58.0,
+      "y": 40.84,
+      "rotation": -90.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(L1-Pad1)",
+        "2": "Net-(C1-Pad1)"
+      },
+      "pads": [
+        "L1.1",
+        "L1.2"
+      ]
+    },
+    {
+      "ref": "R1",
+      "value": "220R",
+      "footprint": "Resistor_THT:R_Axial_DIN0614_L14.3mm_D5.7mm_P7.62mm_Vertical",
+      "x": 70.0,
+      "y": 48.5,
+      "rotation": 90.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(D1-A)",
+        "2": "Net-(L1-Pad1)"
+      },
+      "pads": [
+        "R1.1",
+        "R1.2"
+      ]
+    }
+  ]
+}

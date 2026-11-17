@@ -1,0 +1,711 @@
+
+resolve UART pin location.
+I found a useful lead for the 2024 Haval H9 Gen 2 (CC2030) infotainment system: public technical information identifies Desay SV as a tested head-unit supplier. However, I have not found a verified UART TX/RX/GND pinout for its SA8195P motherboard. 
+
+GitHub
++1
+
+I don't want to give you guessed pin numbers that could damage the board.
+
+1. What we need to identify
+5纳米、PS5、高通骁龙8295……智能车机的『性能天花板』又被刷新了？
+We need to locate:
+
+Signal
+
+Purpose
+
+GND
+
+Ground reference
+
+UART_TX
+
+Boot messages from processor
+
+UART_RX
+
+Commands to processor
+
+VREF
+
+Identify logic voltage; do not connect
+
+2. How we will locate UART
+Find the SA8195P chip.
+
+Inspect nearby small test pads and unpopulated connectors.
+
+Identify GND using continuity mode with power disconnected.
+
+Power the board and measure candidate signal pads relative to GND.
+
+Look for boot-time serial activity using an oscilloscope or logic analyzer.
+
+Confirm UART voltage before connecting your adapter.
+
+UART TX often idles high, but this alone does not identify a pin.
+
+3. I need one photograph from you
+Next step
+Please upload:
+
+A clear photograph of the entire infotainment motherboard.
+
+A close-up of the SA8195P and surrounding test pads.
+
+A close-up of the PCB model number or revision.
+
+I will examine the board and help identify candidate TX, RX and GND locations, distinguishing confirmed connections from unverified ones.
+
+One question: Is your head unit manufactured by Desay SV?
+
+can you explain car navigation board image?
+Absolutely. I can explain an automotive navigation motherboard (IVI – In-Vehicle Infotainment board), including the function of each major chip, power circuit, connector and diagnostic interface.
+
+For your Haval H9 2024 investigation, let's use a Qualcomm SA8195P-based navigation board as our reference.
+
+1. Automotive navigation motherboard
+5纳米、PS5、高通骁龙8295……智能车机的『性能天花板』又被刷新了？
+This type of board typically contains several important sections.
+
+2. Main components and their functions
+SA8195P Automotive Development Platform - LANTRONIX CANADA, ULC
+1. Main processor – SA8195P
+
+The main computer of the navigation system.
+
+Runs Android Automotive or an embedded Android platform.
+
+Controls the display and multimedia.
+
+Communicates with vehicle systems.
+
+Processes camera and navigation information.
+
+TPS65218D0: PMIC shuts down immediately after starting (and then restarts) - Power management forum - Power management - TI E2E support forums
+2. PMIC – Power Management IC
+
+Converts and distributes power to the processor, memory and peripherals.
+
+CPU core voltage.
+
+DDR voltage.
+
+I/O voltage.
+
+Power sequencing and reset.
+
+Micron MT53E1536M64D8HJ-046 LPDDR4X Memory
+ – SMC
+3. RAM – LPDDR4X
+
+Temporary memory used by the processor to run Android and applications.
+
+HN8T05DEHKX073 SK Hynix UFS3.1 In stock - indasina
+4. UFS storage
+
+Stores Android firmware, bootloader, navigation applications and system data.
+
+What you need to know about GMSL technology?
+5. Camera interfaces
+
+Connects surround-view cameras, reversing cameras and other video inputs.
+
+<span class="pushToOtherVc" onclick='pushToOtherVc("people",21332)'>德赛</span>西威新增福特大客户，福特顶级车机拆解
+6. Audio section
+
+Handles audio processing, amplification and speaker output.
+
+3. Important diagnostic points
+For hardware repair, these are the sections I would investigate first:
+
+Section
+
+What to measure or inspect
+
+12 V input
+
+Main supply stability
+
+PMIC
+
+Input, enable and regulator outputs
+
+CPU
+
+Core supply and reset
+
+RAM
+
+DDR power rails and initialization
+
+UFS
+
+Supply and storage communication
+
+UART
+
+Boot messages
+
+USB
+
+EDL 9008 detection
+
+Clock
+
+Reference oscillator activity
+
+4. Simplified navigation board architecture
+Vehicle 12 V power
+
+PMIC / Power supply
+
+Qualcomm SA8195P
+CPU / GPU
+DSP / ISP
+RAM
+UFS
+Display
+Audio
+Cameras
+CAN / Vehicle
+Conceptual architecture, not a verified Haval H9 schematic.
+5. Let's go deeper into your Haval H9 board
+Which section would you like me to explain in detail?
+
+
+UART TX / RX / GND identification
+
+PMIC power rails and voltage measurements
+
+SA8195P CPU and BGA pinout
+
+RAM and UFS storage diagnosis
+
+EDL 9008 and bootloader
+
+Complete motherboard component identification
+You can also upload your actual navigation board image. I can annotate the visible components and explain what each one does, rather than relying on a generic motherboard photograph.
+
+User attachment
+In this board image explain about black marked pin`s role.
+
+Analysis output 1
+Analysis output 1
+I examined the black-marked area in your Haval H9 navigation motherboard image.
+
+My assessment: these are exposed gold-finger contact pads, most likely part of a board-to-board electrical interface.
+
+DIY PCB Gold Finger Repair: A Hobbyist's Guide to Reviving Edge Connectors
+1. What is their function?
+These contacts connect the motherboard to another board or mating connector.
+
+Depending on the board design, they may carry:
+
+Possible signal
+
+Function
+
+GND
+
+Electrical ground
+
+VBAT / VCC
+
+Power supply
+
+UART TX
+
+Serial debug output
+
+UART RX
+
+Serial debug input
+
+USB D+ / D−
+
+USB communication
+
+I2C SDA / SCL
+
+Peripheral communication
+
+GPIO
+
+Control signals
+
+Display signals
+
+Display communication
+
+Important: These are possible functions, not confirmed pin assignments for your board.
+
+2. Could these be UART pins?
+Possibly, but the photograph alone cannot establish that.
+
+I would not connect your USB-UART adapter directly to these contacts yet.
+
+3. How to identify their actual functions
+We can investigate them with your multimeter.
+
+Test A – Ground identification
+
+Disconnect the 12 V supply.
+
+Set your multimeter to continuity mode.
+
+Put one probe on a known PCB ground point.
+
+Carefully test each gold contact.
+
+Record which contacts have continuity to ground.
+
+Test B – Voltage identification
+
+After identifying ground:
+
+Power the board normally.
+
+Set the multimeter to DC voltage.
+
+Measure each contact relative to ground.
+
+Record the voltage.
+
+Do not short adjacent contacts while measuring.
+
+4. I need two more photographs
+Please send:
+
+A magnified photograph of the complete gold-contact area, including the contacts below the black marking.
+
+A photograph of the opposite side of the PCB.
+
+Also, one important question:
+
+Is this gold-contact area connected to another small PCB through a spring connector or directly to the vehicle's wiring harness?
+
+With that information, we can work toward identifying the individual contacts and determine whether any are UART TX/RX, power, ground or other communication signals.
+
+changcheng tank500 has this pins, what do you think about it?
+That's an interesting observation! The GWM Tank 500 and Haval H9 infotainment systems may share some automotive electronics architecture, so comparing their motherboard layouts could help us identify the gold contacts in your photograph.
+
+I found GWM Tank 500 infotainment documentation, including multimedia-system diagrams, but not a verified pinout for the gold contacts themselves. 
+
+GWM Tank EPC
++2
+
+My technical assessment
+The gold contacts you marked could be a factory test or service interface, or a board-to-board connection.
+
+If the Tank 500 has an identical contact layout, that is useful evidence, but it does not establish that the signals are identical.
+
+interface #2
+What I want to compare
+Signal
+
+What we need to establish
+
+GND
+
+Ground contacts
+
+TX
+
+UART transmission
+
+RX
+
+UART reception
+
+1.8 V
+
+Possible logic supply
+
+3.3 V / 5 V
+
+Possible peripheral supply
+
+USB D+/D−
+
+USB interface
+
+GPIO
+
+Control or test signals
+
+Three questions
+Does your Tank 500 board have exactly the same gold contacts as the Haval H9 board?
+
+Is the Tank 500 head unit also based on Qualcomm SA8195P?
+
+Can you upload a photograph of the Tank 500 motherboard, showing those contacts?
+
+My goal is to compare both PCB layouts and determine whether the gold contacts provide access to UART debugging.
+
+If the boards are identical, we can investigate whether the Tank 500 board documentation helps establish the Haval H9 interface pinout.
+
+For the Tank 500 pin setup, here’s one PCB manufacturing option.
+
+
+
+how to debugging car navigation boards using python?
+You can use Python as a powerful diagnostic tool for automotive navigation motherboards, including Qualcomm SA8195P-based infotainment systems such as the Haval H9 and GWM Tank 500.
+
+Python can help you capture UART boot logs, analyze processor startup, monitor USB devices, communicate with Android through ADB, inspect CAN traffic, and identify repeated hardware failures.
+
+I'll show you a practical approach using your existing equipment: multimeter, USB-UART adapter and JTAG debugger.
+
+1. Python diagnostic architecture
+Automotive navigation motherboard
+
+Qualcomm SA8195P / PMIC / RAM / UFS
+UART
+
+Boot logs and serial communication
+USB / ADB
+
+Android and EDL detection
+CAN
+
+Vehicle network monitoring
+JTAG
+
+Processor-level debugging
+Python diagnostic workstation
+
+Capture · Analyze · Report · Troubleshoot
+2. Install Python diagnostic tools
+On your Windows computer, install Python 3 and open Command Prompt.
+
+Run:
+
+python -m pip install pyserial
+python -m pip install python-can
+python -m pip install pandas
+python -m pip install matplotlib
+
+These libraries provide:
+
+Library
+
+Purpose
+
+pyserial
+
+UART communication
+
+python-can
+
+CAN bus monitoring
+
+pandas
+
+Diagnostic data analysis
+
+matplotlib
+
+Plotting voltage and current measurements
+
+You will also need Android Platform Tools for ADB and the appropriate drivers for your USB-UART adapter.
+
+3. UART debugging using Python
+This is the first tool I recommend for your SA8195P board.
+
+UART can reveal whether the processor starts PBL, XBL, UEFI or Android.
+
+Practical example
+First, identify your USB-UART adapter's COM port.
+
+import serial.tools.list_ports
+
+for port in serial.tools.list_ports.comports():
+    print(port.device, port.description)
+
+Example output:
+
+COM3 USB Serial Device
+COM5 USB-SERIAL CH340
+Next, capture the boot messages.
+
+4. Complete UART boot-log capture program
+This Python program reads serial output and saves it into a text file with timestamps.
+
+
+import serial
+import datetime
+import time
+
+PORT = "COM5"       # Change to your adapter's COM port
+BAUDRATE = 115200
+
+filename = (
+    "SA8195P_boot_" +
+    datetime.datetime.now().strftime("%Y%m%d_%H%M%S") +
+    ".log"
+)
+
+print("Connecting to navigation board...")
+
+try:
+    with serial.Serial(
+        port=PORT,
+        baudrate=BAUDRATE,
+        bytesize=8,
+        parity="N",
+        stopbits=1,
+        timeout=1,
+        xonxoff=False,
+        rtscts=False,
+        dsrdtr=False
+    ) as uart:
+
+        print("UART connected.")
+        print("Waiting for boot messages...")
+        print("Press Ctrl+C to stop.")
+
+        with open(filename, "a", encoding="utf-8") as log:
+            while True:
+                data = uart.readline()
+
+Important connection precautions:
+
+Identify UART GND, TX and RX first.
+
+Verify whether the board uses 1.8 V or 3.3 V UART logic.
+
+Use a compatible level shifter if necessary.
+
+Leave UART adapter VCC disconnected.
+
+Start with receive-only monitoring; don't transmit commands to unknown bootloader interfaces.
+
+5. Automatically analyze Qualcomm boot logs
+We can make Python search for common startup failures.
+
+For example:
+
+Log keyword
+
+Possible issue
+
+PBL
+
+Primary bootloader activity
+
+XBL
+
+Early bootloader
+
+DDR
+
+Memory initialization
+
+UFS
+
+Storage initialization
+
+PMIC
+
+Power management
+
+Watchdog
+
+Unexpected reset
+
+Authentication
+
+Firmware authentication
+
+Kernel panic
+
+Linux kernel failure
+
+Secure boot
+
+Secure boot verification
+
+Here is a simple analyzer:
+
+
+keywords = {
+    "PBL": "Primary bootloader",
+    "XBL": "Early bootloader",
+    "DDR": "Memory initialization",
+    "UFS": "Storage initialization",
+    "PMIC": "Power management",
+    "Watchdog": "Possible watchdog reset",
+    "Authentication": "Authentication event",
+    "Kernel panic": "Kernel failure",
+    "Secure boot": "Secure boot event",
+    "Fatal": "Fatal error"
+}
+
+filename = "SA8195P_boot.log"
+
+with open(filename, "r", errors="replace") as file:
+    lines = file.readlines()
+
+print("\nSA8195P BOOT ANALYSIS")
+print("=" * 45)
+
+for number, line in enumerate(lines, 1):
+    for keyword, description in keywords.items():
+        if keyword.lower() in line.lower():
+            print(
+                f"Line {number}: "
+                f"{description} -> {line.strip()}"
+            )
+
+
+This is a keyword-based screening tool, not a definitive Qualcomm boot-stage decoder. We need the complete log and firmware-specific context to interpret failures correctly.
+
+6. Android debugging using Python and ADB
+If the navigation board successfully boots Android, Python can automate ADB diagnostics.
+
+First check the connection:
+
+adb devices
+
+Then run these commands from Python:
+
+
+import subprocess
+
+commands = [
+    ["adb", "devices"],
+    ["adb", "shell", "getprop", "ro.product.model"],
+    ["adb", "shell", "getprop", "ro.build.version.release"],
+    ["adb", "shell", "cat", "/proc/meminfo"],
+    ["adb", "shell", "dmesg"]
+]
+
+for command in commands:
+    print("\nCOMMAND:", " ".join(command))
+
+    result = subprocess.run(
+        command,
+        capture_output=True,
+        text=True,
+        timeout=30
+    )
+
+    print(result.stdout[:5000])
+
+    if result.stderr:
+        print("ERROR:", result.stderr)
+
+
+This helps investigate:
+
+Android startup failures.
+
+Memory availability.
+
+Kernel initialization.
+
+Hardware driver problems.
+
+Display and USB initialization.
+
+Some commands require elevated permissions or an engineering build.
+
+7. CAN bus diagnostics using Python
+You can also monitor vehicle communication if you have a compatible CAN interface.
+
+操作【GM3568JHF】FPGA+ARM异构开发板 使用指南：CAN-CSDN博客
+Install:
+
+pip install python-can
+
+Example for a SocketCAN-compatible interface on Linux:
+
+
+import can
+from datetime import datetime
+
+bus = can.interface.Bus(
+    interface="socketcan",
+    channel="can0"
+)
+
+print("Monitoring CAN bus...")
+
+try:
+    while True:
+        msg = bus.recv(timeout=1)
+
+        if msg is not None:
+            print(
+                datetime.now().isoformat(),
+                hex(msg.arbitration_id),
+                msg.data.hex(),
+                "DLC:", msg.dlc
+            )
+
+except KeyboardInterrupt:
+    print("Monitoring stopped.")
+
+finally:
+    bus.shutdown()
+
+
+For initial troubleshooting, use listen-only mode with a suitable CAN adapter and do not transmit commands to vehicle control modules. Incorrect CAN messages can affect safety-critical systems.
+
+8. My recommended Python diagnostic project
+I would organize your work into one small application:
+
+SA8195P Diagnostic Toolkit
+
+Project outline
+01 – UART Logger
+
+Capture PBL, XBL, UEFI and Android logs.
+02 – USB / EDL Detector
+
+Identify Qualcomm 9008 and other USB devices.
+03 – Boot Log Analyzer
+
+Search for DDR, UFS, PMIC and watchdog failures.
+04 – CAN Monitor
+
+Passively inspect automotive communication.
+05 – Diagnostic Report
+
+Generate timestamped logs and troubleshooting reports.
+9. Let's build your actual diagnostic software
+I suggest creating a Python application specifically for your Haval H9 / Tank 500 SA8195P navigation board.
+
+Which version would you prefer?
+
+Application type
+
+
+Windows GUI application (recommended)
+
+Python command-line toolkit
+
+Advanced diagnostic platform
+Features to include
+
+
+UART live monitoring
+
+Automatic Qualcomm boot-log analysis
+
+USB / EDL 9008 detection
+
+ADB Android diagnostics
+
+CAN bus monitoring
+
+Voltage measurement logging
+
+Export diagnostic reports
+My recommendation: Start with UART live monitoring, automatic boot-log analysis and EDL detection. These three features will be especially useful for diagnosing your current Haval H9 no-boot problem.
+
+
+
+
+

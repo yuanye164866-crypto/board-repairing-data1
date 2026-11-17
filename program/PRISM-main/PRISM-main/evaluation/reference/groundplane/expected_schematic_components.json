@@ -1,0 +1,33 @@
+{
+  "source_schematic": "Dataset/Groundplane/Groundplane/Groundplane.kicad_sch",
+  "components": [
+    {
+      "ref": "D1",
+      "value": "LED",
+      "lib_id": "Device:LED",
+      "type": "Diode",
+      "footprint": "LED_THT:LED_D10.0mm"
+    },
+    {
+      "ref": "D2",
+      "value": "LED",
+      "lib_id": "Device:LED",
+      "type": "Diode",
+      "footprint": "LED_THT:LED_D10.0mm"
+    },
+    {
+      "ref": "D3",
+      "value": "LED",
+      "lib_id": "Device:LED",
+      "type": "Diode",
+      "footprint": "LED_THT:LED_D10.0mm"
+    },
+    {
+      "ref": "R1",
+      "value": "1K",
+      "lib_id": "Device:R",
+      "type": "Resistor",
+      "footprint": "Resistor_THT:R_Axial_DIN0918_L18.0mm_D9.0mm_P25.40mm_Horizontal"
+    }
+  ]
+}

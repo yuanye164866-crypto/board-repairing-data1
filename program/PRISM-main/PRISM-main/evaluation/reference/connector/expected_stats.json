@@ -1,0 +1,24 @@
+{
+  "component_count": 6,
+  "pad_count": 13,
+  "pad_count_by_type": {
+    "thru_hole": 13
+  },
+  "pad_count_by_side": {
+    "both": 13
+  },
+  "net_count": 4,
+  "connected_pin_count": 13,
+  "unconnected_pad_count": 0,
+  "segment_count": 23,
+  "segment_count_by_layer": {
+    "B.Cu": 8,
+    "F.Cu": 15
+  },
+  "via_count": 0,
+  "zone_count": 1,
+  "zone_count_by_layer": {
+    "B.Cu": 1
+  },
+  "mounting_hole_count": 0
+}

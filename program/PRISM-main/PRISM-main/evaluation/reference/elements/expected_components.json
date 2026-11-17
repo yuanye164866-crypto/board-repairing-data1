@@ -1,0 +1,344 @@
+{
+  "components": [
+    {
+      "ref": "C1",
+      "value": "10uF",
+      "footprint": "Capacitor_THT:C_Radial_D4.0mm_H5.0mm_P1.50mm",
+      "x": 112.0,
+      "y": 147.0,
+      "rotation": 90.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "+9V",
+        "2": "Net-(D1-A)"
+      },
+      "pads": [
+        "C1.1",
+        "C1.2"
+      ]
+    },
+    {
+      "ref": "C2",
+      "value": "100uF",
+      "footprint": "Capacitor_THT:C_Radial_D10.0mm_H16.0mm_P5.00mm",
+      "x": 81.0,
+      "y": 142.5,
+      "rotation": 90.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "+9V",
+        "2": "Net-(D1-A)"
+      },
+      "pads": [
+        "C2.1",
+        "C2.2"
+      ]
+    },
+    {
+      "ref": "C3",
+      "value": "2.2uF",
+      "footprint": "Capacitor_THT:CP_Axial_L80.0mm_D35.0mm_P85.00mm_Horizontal",
+      "x": 62.0,
+      "y": 59.0,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(C3-Pad1)",
+        "2": "Net-(C3-Pad2)"
+      },
+      "pads": [
+        "C3.1",
+        "C3.2"
+      ]
+    },
+    {
+      "ref": "C4",
+      "value": "220uF",
+      "footprint": "Capacitor_THT:CP_Radial_D7.5mm_P2.50mm",
+      "x": 152.839,
+      "y": 116.5,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(C3-Pad1)",
+        "2": "Net-(C4-Pad2)"
+      },
+      "pads": [
+        "C4.1",
+        "C4.2"
+      ]
+    },
+    {
+      "ref": "C5",
+      "value": "100uF",
+      "footprint": "Capacitor_THT:CP_Radial_D14.0mm_P7.50mm",
+      "x": 89.5,
+      "y": 113.0,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(D5-A)",
+        "2": "Net-(C4-Pad2)"
+      },
+      "pads": [
+        "C5.1",
+        "C5.2"
+      ]
+    },
+    {
+      "ref": "D1",
+      "value": "D",
+      "footprint": "Diode_THT:D_5W_P10.16mm_Horizontal",
+      "x": 91.58,
+      "y": 128.5,
+      "rotation": 180.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "GND",
+        "2": "Net-(D1-A)"
+      },
+      "pads": [
+        "D1.1",
+        "D1.2"
+      ]
+    },
+    {
+      "ref": "D2",
+      "value": "D",
+      "footprint": "Diode_THT:D_A-405_P10.16mm_Horizontal",
+      "x": 112.42,
+      "y": 120.0,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(D2-K)",
+        "2": "Net-(D2-A)"
+      },
+      "pads": [
+        "D2.1",
+        "D2.2"
+      ]
+    },
+    {
+      "ref": "D3",
+      "value": "D",
+      "footprint": "Diode_THT:D_DO-15_P10.16mm_Horizontal",
+      "x": 101.42,
+      "y": 96.5,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(D2-K)",
+        "2": "Net-(D3-A)"
+      },
+      "pads": [
+        "D3.1",
+        "D3.2"
+      ]
+    },
+    {
+      "ref": "D4",
+      "value": "D",
+      "footprint": "Diode_THT:D_DO-35_SOD27_P3.81mm_Vertical_AnodeUp",
+      "x": 147.251,
+      "y": 134.0,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "+9V",
+        "2": "Net-(D3-A)"
+      },
+      "pads": [
+        "D4.1",
+        "D4.2"
+      ]
+    },
+    {
+      "ref": "D5",
+      "value": "D",
+      "footprint": "Diode_THT:D_DO-201AE_P15.24mm_Horizontal",
+      "x": 61.38,
+      "y": 113.0,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "+9V",
+        "2": "Net-(D5-A)"
+      },
+      "pads": [
+        "D5.1",
+        "D5.2"
+      ]
+    },
+    {
+      "ref": "L1",
+      "value": "1uH",
+      "footprint": "Inductor_THT:L_Radial_D7.5mm_P5.00mm_Fastron_07P",
+      "x": 131.0,
+      "y": 128.0,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(D1-A)",
+        "2": "Net-(D2-A)"
+      },
+      "pads": [
+        "L1.1",
+        "L1.2"
+      ]
+    },
+    {
+      "ref": "L2",
+      "value": "10mH",
+      "footprint": "Inductor_THT:L_Axial_L7.0mm_D3.3mm_P12.70mm_Horizontal_Fastron_MICC",
+      "x": 131.15,
+      "y": 86.5,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(C3-Pad2)",
+        "2": "Net-(D2-A)"
+      },
+      "pads": [
+        "L2.1",
+        "L2.2"
+      ]
+    },
+    {
+      "ref": "L3",
+      "value": "4.7mH",
+      "footprint": "Inductor_THT:L_Axial_L12.8mm_D5.8mm_P20.32mm_Horizontal_Fastron_HBCC",
+      "x": 161.34,
+      "y": 73.0,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(C3-Pad2)",
+        "2": "Net-(D3-A)"
+      },
+      "pads": [
+        "L3.1",
+        "L3.2"
+      ]
+    },
+    {
+      "ref": "L4",
+      "value": "22mH",
+      "footprint": "Inductor_THT:L_Axial_L24.0mm_D7.1mm_P5.08mm_Vertical_Vishay_IM-10-28",
+      "x": 128.775,
+      "y": 99.225,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(C4-Pad2)",
+        "2": "Net-(D3-A)"
+      },
+      "pads": [
+        "L4.1",
+        "L4.2"
+      ]
+    },
+    {
+      "ref": "L5",
+      "value": "100mH",
+      "footprint": "Inductor_THT:L_Axial_L14.0mm_D4.5mm_P5.08mm_Vertical_Fastron_LACC",
+      "x": 135.085,
+      "y": 113.0,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(D3-A)",
+        "2": "Net-(D5-A)"
+      },
+      "pads": [
+        "L5.1",
+        "L5.2"
+      ]
+    },
+    {
+      "ref": "R1",
+      "value": "10R",
+      "footprint": "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal",
+      "x": 40.84,
+      "y": 126.5,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(R1-Pad1)",
+        "2": "+9V"
+      },
+      "pads": [
+        "R1.1",
+        "R1.2"
+      ]
+    },
+    {
+      "ref": "R2",
+      "value": "22R",
+      "footprint": "Resistor_THT:R_Axial_DIN0614_L14.3mm_D5.7mm_P15.24mm_Horizontal",
+      "x": 81.38,
+      "y": 89.0,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(R1-Pad1)",
+        "2": "+9V"
+      },
+      "pads": [
+        "R2.1",
+        "R2.2"
+      ]
+    },
+    {
+      "ref": "R3",
+      "value": "1K",
+      "footprint": "Resistor_THT:R_Axial_DIN0617_L17.0mm_D6.0mm_P25.40mm_Horizontal",
+      "x": 45.5,
+      "y": 84.7,
+      "rotation": 90.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(R1-Pad1)",
+        "2": "Net-(C3-Pad1)"
+      },
+      "pads": [
+        "R3.1",
+        "R3.2"
+      ]
+    },
+    {
+      "ref": "R4",
+      "value": "470R",
+      "footprint": "Resistor_THT:R_Axial_DIN0918_L18.0mm_D9.0mm_P25.40mm_Horizontal",
+      "x": 43.8,
+      "y": 99.0,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(R1-Pad1)",
+        "2": "Net-(C3-Pad1)"
+      },
+      "pads": [
+        "R4.1",
+        "R4.2"
+      ]
+    },
+    {
+      "ref": "R5",
+      "value": "10K",
+      "footprint": "Resistor_THT:R_Axial_Power_L20.0mm_W6.4mm_P5.08mm_Vertical",
+      "x": 158.96,
+      "y": 93.5,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(R1-Pad1)",
+        "2": "Net-(D5-A)"
+      },
+      "pads": [
+        "R5.1",
+        "R5.2"
+      ]
+    }
+  ]
+}

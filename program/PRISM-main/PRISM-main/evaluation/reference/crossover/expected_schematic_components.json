@@ -1,0 +1,47 @@
+{
+  "source_schematic": "Dataset/Crossover/Crossover/Crossover.kicad_sch",
+  "components": [
+    {
+      "ref": "C1",
+      "value": "100pF",
+      "lib_id": "Device:C",
+      "type": "Capacitor",
+      "footprint": "Capacitor_THT:C_Radial_D16.0mm_H25.0mm_P7.50mm"
+    },
+    {
+      "ref": "C2",
+      "value": "22nF",
+      "lib_id": "Device:C",
+      "type": "Capacitor",
+      "footprint": "Capacitor_THT:C_Radial_D12.5mm_H25.0mm_P5.00mm"
+    },
+    {
+      "ref": "D1",
+      "value": "D",
+      "lib_id": "Device:D",
+      "type": "Diode",
+      "footprint": "Diode_THT:D_5KP_P12.70mm_Horizontal"
+    },
+    {
+      "ref": "D2",
+      "value": "D",
+      "lib_id": "Device:D",
+      "type": "Diode",
+      "footprint": "Diode_THT:D_5KP_P12.70mm_Horizontal"
+    },
+    {
+      "ref": "R1",
+      "value": "100R",
+      "lib_id": "Device:R",
+      "type": "Resistor",
+      "footprint": "Resistor_THT:R_Axial_Power_L20.0mm_W6.4mm_P22.40mm"
+    },
+    {
+      "ref": "R2",
+      "value": "10K",
+      "lib_id": "Device:R",
+      "type": "Resistor",
+      "footprint": "Resistor_THT:R_Axial_Power_L20.0mm_W6.4mm_P22.40mm"
+    }
+  ]
+}

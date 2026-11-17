@@ -1,0 +1,145 @@
+{
+  "source_schematic": "Dataset/Elements/Elements/Elements.kicad_sch",
+  "components": [
+    {
+      "ref": "C1",
+      "value": "10uF",
+      "lib_id": "Device:C_Polarized",
+      "type": "Capacitor",
+      "footprint": "Capacitor_THT:C_Radial_D4.0mm_H5.0mm_P1.50mm"
+    },
+    {
+      "ref": "C2",
+      "value": "100uF",
+      "lib_id": "Device:C_Polarized",
+      "type": "Capacitor",
+      "footprint": "Capacitor_THT:C_Radial_D10.0mm_H16.0mm_P5.00mm"
+    },
+    {
+      "ref": "C3",
+      "value": "2.2uF",
+      "lib_id": "Device:C_Polarized",
+      "type": "Capacitor",
+      "footprint": "Capacitor_THT:CP_Axial_L80.0mm_D35.0mm_P85.00mm_Horizontal"
+    },
+    {
+      "ref": "C4",
+      "value": "220uF",
+      "lib_id": "Device:C_Polarized",
+      "type": "Capacitor",
+      "footprint": "Capacitor_THT:CP_Radial_D7.5mm_P2.50mm"
+    },
+    {
+      "ref": "C5",
+      "value": "100uF",
+      "lib_id": "Device:C_Polarized",
+      "type": "Capacitor",
+      "footprint": "Capacitor_THT:CP_Radial_D14.0mm_P7.50mm"
+    },
+    {
+      "ref": "D1",
+      "value": "D",
+      "lib_id": "Device:D",
+      "type": "Diode",
+      "footprint": "Diode_THT:D_5W_P10.16mm_Horizontal"
+    },
+    {
+      "ref": "D2",
+      "value": "D",
+      "lib_id": "Device:D",
+      "type": "Diode",
+      "footprint": "Diode_THT:D_A-405_P10.16mm_Horizontal"
+    },
+    {
+      "ref": "D3",
+      "value": "D",
+      "lib_id": "Device:D",
+      "type": "Diode",
+      "footprint": "Diode_THT:D_DO-15_P10.16mm_Horizontal"
+    },
+    {
+      "ref": "D4",
+      "value": "D",
+      "lib_id": "Device:D",
+      "type": "Diode",
+      "footprint": "Diode_THT:D_DO-35_SOD27_P3.81mm_Vertical_AnodeUp"
+    },
+    {
+      "ref": "D5",
+      "value": "D",
+      "lib_id": "Device:D",
+      "type": "Diode",
+      "footprint": "Diode_THT:D_DO-201AE_P15.24mm_Horizontal"
+    },
+    {
+      "ref": "L1",
+      "value": "1uH",
+      "lib_id": "Device:L",
+      "type": "Inductor",
+      "footprint": "Inductor_THT:L_Radial_D7.5mm_P5.00mm_Fastron_07P"
+    },
+    {
+      "ref": "L2",
+      "value": "10mH",
+      "lib_id": "Device:L",
+      "type": "Inductor",
+      "footprint": "Inductor_THT:L_Axial_L7.0mm_D3.3mm_P12.70mm_Horizontal_Fastron_MICC"
+    },
+    {
+      "ref": "L3",
+      "value": "4.7mH",
+      "lib_id": "Device:L",
+      "type": "Inductor",
+      "footprint": "Inductor_THT:L_Axial_L12.8mm_D5.8mm_P20.32mm_Horizontal_Fastron_HBCC"
+    },
+    {
+      "ref": "L4",
+      "value": "22mH",
+      "lib_id": "Device:L",
+      "type": "Inductor",
+      "footprint": "Inductor_THT:L_Axial_L24.0mm_D7.1mm_P5.08mm_Vertical_Vishay_IM-10-28"
+    },
+    {
+      "ref": "L5",
+      "value": "100mH",
+      "lib_id": "Device:L",
+      "type": "Inductor",
+      "footprint": "Inductor_THT:L_Axial_L14.0mm_D4.5mm_P5.08mm_Vertical_Fastron_LACC"
+    },
+    {
+      "ref": "R1",
+      "value": "10R",
+      "lib_id": "Device:R",
+      "type": "Resistor",
+      "footprint": "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal"
+    },
+    {
+      "ref": "R2",
+      "value": "22R",
+      "lib_id": "Device:R",
+      "type": "Resistor",
+      "footprint": "Resistor_THT:R_Axial_DIN0614_L14.3mm_D5.7mm_P15.24mm_Horizontal"
+    },
+    {
+      "ref": "R3",
+      "value": "1K",
+      "lib_id": "Device:R",
+      "type": "Resistor",
+      "footprint": "Resistor_THT:R_Axial_DIN0617_L17.0mm_D6.0mm_P25.40mm_Horizontal"
+    },
+    {
+      "ref": "R4",
+      "value": "470R",
+      "lib_id": "Device:R",
+      "type": "Resistor",
+      "footprint": "Resistor_THT:R_Axial_DIN0918_L18.0mm_D9.0mm_P25.40mm_Horizontal"
+    },
+    {
+      "ref": "R5",
+      "value": "10K",
+      "lib_id": "Device:R",
+      "type": "Resistor",
+      "footprint": "Resistor_THT:R_Axial_Power_L20.0mm_W6.4mm_P5.08mm_Vertical"
+    }
+  ]
+}

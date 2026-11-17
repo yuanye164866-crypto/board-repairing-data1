@@ -1,0 +1,33 @@
+{
+  "source_schematic": "Dataset/Divider/Divider/Divider.kicad_sch",
+  "components": [
+    {
+      "ref": "J1",
+      "value": "Screw_Terminal_01x02",
+      "lib_id": "Connector:Screw_Terminal_01x02",
+      "type": "Connector",
+      "footprint": "TerminalBlock_Wuerth:Wuerth_691311400102_P7.62mm"
+    },
+    {
+      "ref": "J2",
+      "value": "Screw_Terminal_01x02",
+      "lib_id": "Connector:Screw_Terminal_01x02",
+      "type": "Connector",
+      "footprint": "TerminalBlock_Wuerth:Wuerth_691311400102_P7.62mm"
+    },
+    {
+      "ref": "R1",
+      "value": "100R",
+      "lib_id": "Device:R",
+      "type": "Resistor",
+      "footprint": "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P25.40mm_Horizontal"
+    },
+    {
+      "ref": "R2",
+      "value": "470R",
+      "lib_id": "Device:R",
+      "type": "Resistor",
+      "footprint": "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P25.40mm_Horizontal"
+    }
+  ]
+}

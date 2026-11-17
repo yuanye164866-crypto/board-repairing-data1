@@ -1,0 +1,47 @@
+{
+  "source_schematic": "Dataset/Connector/Connector/Connector.kicad_sch",
+  "components": [
+    {
+      "ref": "C1",
+      "value": "100pF",
+      "lib_id": "Device:C",
+      "type": "Capacitor",
+      "footprint": "Capacitor_THT:C_Radial_D12.5mm_H20.0mm_P5.00mm"
+    },
+    {
+      "ref": "D1",
+      "value": "D",
+      "lib_id": "Device:D",
+      "type": "Diode",
+      "footprint": "Diode_THT:D_DO-201_P15.24mm_Horizontal"
+    },
+    {
+      "ref": "J1",
+      "value": "Conn_01x02_Pin",
+      "lib_id": "Connector:Conn_01x02_Pin",
+      "type": "Connector",
+      "footprint": "Connector_PinSocket_2.00mm:PinSocket_1x02_P2.00mm_Vertical"
+    },
+    {
+      "ref": "Q1",
+      "value": "Q_PNP",
+      "lib_id": "Device:Q_PNP",
+      "type": "Transistor",
+      "footprint": "Package_TO_SOT_THT:TO-92L_Wide"
+    },
+    {
+      "ref": "R1",
+      "value": "100R",
+      "lib_id": "Device:R",
+      "type": "Resistor",
+      "footprint": "Resistor_THT:R_Axial_DIN0614_L14.3mm_D5.7mm_P25.40mm_Horizontal"
+    },
+    {
+      "ref": "R2",
+      "value": "50R",
+      "lib_id": "Device:R",
+      "type": "Resistor",
+      "footprint": "Resistor_THT:R_Axial_Power_L25.0mm_W9.0mm_P30.48mm"
+    }
+  ]
+}

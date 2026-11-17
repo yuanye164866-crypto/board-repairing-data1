@@ -1,0 +1,300 @@
+
+KMJS9001RM   chips datasheet?
+
+Yes. The exact part number is Samsung KMJS9001RM-BG01.
+
+It is a Samsung uMCP5 (UFS + DRAM) memory package.
+
+KM2L9001CM-B518 uMCP (UFS+DRAM) Samsung electronic component supplier - indasina
+
+Confirmed specifications
+
+UFS storage: 256 GB
+
+UFS standard: 3.1
+
+RAM: 96 Gb (12 GB)
+
+RAM type: LPDDR5
+
+RAM speed: 6400 Mbps
+
+Package: 297-ball FBGA
+
+Dimensions: approximately 11.5 × 13 mm
+
+
+Modules| HBM
++2
+About the datasheet: I located Samsung's official product page, but it currently redirects to the general LPDDR5 uMCP page. I could not find a publicly downloadable, model-specific PDF datasheet.
+
+Samsung official LPDDR5 uMCP documentation
+
+Samsung KMJS9001RM-BG01 product reference
+
+Technical specifications and package information
+
+Important: If you need the datasheet for board-level repair or chip programming, you will need more than the general product specifications.
+
+I can help you investigate the following:
+
+Complete BGA297 pinout / ball map.
+
+UFS 3.1 interface pin assignments.
+
+LPDDR5 pin assignments.
+
+Power supply pins and voltage requirements.
+
+Reballing diagram and package dimensions.
+
+What is your main purpose: repairing a motherboard, reading the UFS data, or designing a PCB using this chip? That will help me find the right technical documentation.
+
+reading the UFS data using F64 tool box. tell me about reading paramaters.
+Yes. For reading the Samsung KMJS9001RM UFS storage using the F64 Box, the important thing is to configure the UFS connection correctly and read the existing device parameters without changing its configuration.
+
+I'll explain the parameters you should pay attention to.
+
+1. UFS identification parameters
+When F64 detects the chip, it should report information similar to this:
+
+Parameter
+
+Meaning
+
+Manufacturer ID
+
+Samsung identification
+
+Product Name
+
+Exact chip model
+
+UFS Version
+
+Expected UFS 3.1, if confirmed
+
+Serial Number
+
+Unique chip identifier
+
+UFS Gear
+
+Communication speed
+
+VCC
+
+Main UFS power
+
+VCCQ
+
+I/O power
+
+VCCQ2
+
+Memory interface power
+
+F64 can also read JEDEC descriptors and UFS health information. 
+
+FlutterFlow Community
++2
+
+2. UFS LUN parameters
+This is particularly important when backing up data.
+
+LUN
+
+Description
+
+LUN 0
+
+User data or main storage, depending on configuration
+
+LUN 1
+
+Possible Boot LUN A
+
+LUN 2
+
+Possible Boot LUN B
+
+RPMB
+
+Replay Protected Memory Block
+
+Important: The actual LUN assignments and capacities must be read from the chip. Do not assume that every Samsung UFS has the same configuration.
+
+3. UFS health parameters
+I recommend reading these before performing a full backup.
+
+Life Time Estimation A
+
+Life Time Estimation B
+
+Pre-EOL Information
+
+Average Erase Cycle
+
+Maximum Erase Cycle
+
+Runtime Bad Blocks
+
+Remaining Reserved Blocks
+
+Read/Write statistics
+
+These help determine whether the chip is healthy or deteriorating.
+
+4. Recommended F64 reading procedure
+Connect the chip using the appropriate UFS socket or ISP connection.
+
+Select UFS 3.1 if manual selection is required and supported.
+
+Initialize the chip.
+
+Read JEDEC information.
+
+Read Device, Geometry and Unit Descriptors.
+
+Read the complete LUN list.
+
+Read GPT and partition information.
+
+Back up all accessible LUNs before attempting any modifications.
+
+Important Do not use UFS provisioning, Configuration Descriptor writing, Secure WP removal, or erase functions when your goal is simply to recover data. These operations can cause data loss.
+
+5. I need to see your F64 parameters screen
+Can you upload a screenshot of the F64 UFS initialization or parameter settings screen?
+
+In particular, I want to see:
+
+VCC voltage
+
+VCCQ voltage
+
+VCCQ2 voltage
+
+Clock frequency
+
+HS Gear
+
+Power mode
+
+UFS initialization settings
+
+I can then help you determine the appropriate read-only configuration for the KMJS9001RM, rather than guessing voltage or timing values.
+
+tell about VCC, VCCQ values.
+For your Samsung KMJS9001RM UFS chip, VCC and VCCQ are two important power supplies. Setting them incorrectly on the F64 Box can prevent initialization or potentially damage the chip.
+
+1. Recommended UFS power voltages
+For a typical UFS 3.1 device, the standard voltage ranges are:
+
+Parameter
+
+Voltage range
+
+Suggested nominal
+
+VCC
+
+2.4–2.7 V
+
+2.5 V
+
+VCCQ
+
+1.14–1.26 V
+
+1.2 V
+
+VCCQ2
+
+Device-dependent
+
+Verify datasheet
+
+These ranges are documented in UFS 3.1 electrical specifications. 
+
+Flash Storage Specification UFS 3.1
++2
+
+2. What each voltage does
+VCC — Main memory supply
+
+2.5 V
+Supplies the UFS device's internal flash memory circuitry.
+
+VCCQ — UFS I/O supply
+
+1.2 V
+Supplies the UFS interface I/O circuitry.
+
+VCCQ2 — Additional I/O supply
+
+Device-specific
+Some UFS devices do not use VCCQ2. Do not assume it is required.
+
+3. Important distinction for Samsung
+The values above are general UFS 3.1 operating ranges, not verified Samsung KMJS9001RM-specific electrical limits.
+
+Some embedded UFS devices also support a lower VCC operating range of 1.7–1.95 V. Therefore, confirm the Samsung device's supported power configuration before applying power. 
+
+Git at Google
++1
+
+4. My questions about your F64 Box
+I need two details to avoid giving you an incorrect configuration:
+
+Are you connecting the chip directly using a UFS socket, or using ISP on a motherboard?
+
+Does your F64 software show separate settings for VCC, VCCQ and VCCQ2?
+
+If possible, upload a screenshot of the F64 voltage settings.
+
+I can then help interpret each setting and identify which voltages are appropriate for safe read-only initialization.
+
+rate?
+For the Samsung KMJS9001RM (UFS 3.1), the RATE setting in F64 generally refers to the UFS communication speed or link rate.
+
+UFS 3.1 supports high-speed M-PHY Gear 4, but I recommend starting with a lower speed for chip identification.
+
+F64 RATE setting
+
+Recommendation
+
+Low / Safe
+
+Start here
+
+HS-Gear 1
+
+Initial communication
+
+HS-Gear 2
+
+If initialization is stable
+
+HS-Gear 3
+
+Faster reading
+
+HS-Gear 4
+
+Maximum performance, if supported
+
+My recommendation: Start with the lowest available RATE, successfully identify the chip, and only increase the speed if communication remains stable.
+
+One important question: Does your F64 RATE menu show values such as 10 MHz, 20 MHz, 40 MHz, or HS-G1, HS-G2, HS-G3, HS-G4?
+
+These are different types of settings, and I don't want to give you an incorrect RATE value.
+
+This might also interest you.
+
+
+
+
+
+
+

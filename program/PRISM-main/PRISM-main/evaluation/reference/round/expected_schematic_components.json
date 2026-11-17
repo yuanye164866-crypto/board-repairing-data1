@@ -1,0 +1,33 @@
+{
+  "source_schematic": "Dataset/Round/Round/Round.kicad_sch",
+  "components": [
+    {
+      "ref": "C1",
+      "value": "4.7pF",
+      "lib_id": "Device:C",
+      "type": "Capacitor",
+      "footprint": "Capacitor_THT:C_Axial_L12.0mm_D6.5mm_P15.00mm_Horizontal"
+    },
+    {
+      "ref": "D1",
+      "value": "1N4002",
+      "lib_id": "Diode:1N4002",
+      "type": "Diode",
+      "footprint": "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+    },
+    {
+      "ref": "L1",
+      "value": "3300mH",
+      "lib_id": "Device:L",
+      "type": "Inductor",
+      "footprint": "Inductor_THT:L_Axial_L16.0mm_D9.5mm_P20.32mm_Horizontal_Vishay_IM-10-37"
+    },
+    {
+      "ref": "R1",
+      "value": "220R",
+      "lib_id": "Device:R",
+      "type": "Resistor",
+      "footprint": "Resistor_THT:R_Axial_DIN0614_L14.3mm_D5.7mm_P7.62mm_Vertical"
+    }
+  ]
+}

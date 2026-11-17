@@ -1,0 +1,42 @@
+{
+  "nets": [
+    {
+      "name": "-9V",
+      "pins": [
+        "J1.1",
+        "R1.1"
+      ],
+      "pin_count": 2
+    },
+    {
+      "name": "GND",
+      "pins": [
+        "C1.2",
+        "J1.2",
+        "Q1.3"
+      ],
+      "pin_count": 3
+    },
+    {
+      "name": "Net-(D1-A)",
+      "pins": [
+        "C1.1",
+        "D1.2",
+        "Q1.2",
+        "R1.2",
+        "R2.1"
+      ],
+      "pin_count": 5
+    },
+    {
+      "name": "Net-(D1-K)",
+      "pins": [
+        "D1.1",
+        "Q1.1",
+        "R2.2"
+      ],
+      "pin_count": 3
+    }
+  ],
+  "unconnected_pads": []
+}

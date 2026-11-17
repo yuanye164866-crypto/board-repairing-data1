@@ -1,0 +1,55 @@
+{
+  "components": [
+    {
+      "ref": "R1",
+      "value": "R",
+      "footprint": "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal",
+      "x": 70.075,
+      "y": 27.5,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(R1-Pad1)",
+        "2": "Net-(R1-Pad2)"
+      },
+      "pads": [
+        "R1.1",
+        "R1.2"
+      ]
+    },
+    {
+      "ref": "R2",
+      "value": "R",
+      "footprint": "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal",
+      "x": 46.3,
+      "y": 47.0,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(R1-Pad1)",
+        "2": "Net-(R1-Pad2)"
+      },
+      "pads": [
+        "R2.1",
+        "R2.2"
+      ]
+    },
+    {
+      "ref": "R3",
+      "value": "R",
+      "footprint": "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal",
+      "x": 70.075,
+      "y": 64.375,
+      "rotation": 0.0,
+      "pin_count": 2,
+      "pins": {
+        "1": "Net-(R1-Pad1)",
+        "2": "Net-(R1-Pad2)"
+      },
+      "pads": [
+        "R3.1",
+        "R3.2"
+      ]
+    }
+  ]
+}

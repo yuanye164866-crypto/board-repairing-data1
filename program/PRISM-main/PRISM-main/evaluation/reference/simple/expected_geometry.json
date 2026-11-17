@@ -1,0 +1,152 @@
+{
+  "pads": [
+    {
+      "ref": "R1",
+      "pin": "1",
+      "node": "R1.1",
+      "net": "+5V",
+      "side": "both",
+      "type": "thru_hole",
+      "shape": "circle",
+      "x": 66.475,
+      "y": 55.075,
+      "rotation": 0.0,
+      "size": [
+        1.9,
+        1.9
+      ],
+      "drill": [
+        1.2,
+        1.2
+      ],
+      "layers": "*.Cu *.Mask"
+    },
+    {
+      "ref": "R1",
+      "pin": "2",
+      "node": "R1.2",
+      "net": "GND",
+      "side": "both",
+      "type": "thru_hole",
+      "shape": "circle",
+      "x": 91.875,
+      "y": 55.075,
+      "rotation": 0.0,
+      "size": [
+        1.9,
+        1.9
+      ],
+      "drill": [
+        1.2,
+        1.2
+      ],
+      "layers": "*.Cu *.Mask"
+    }
+  ],
+  "segments": [
+    {
+      "start": [
+        102.925,
+        55.075
+      ],
+      "end": [
+        91.875,
+        55.075
+      ],
+      "width": 3.0,
+      "layer": "F.Cu",
+      "net": "GND"
+    },
+    {
+      "start": [
+        103.0,
+        55.0
+      ],
+      "end": [
+        102.925,
+        55.075
+      ],
+      "width": 0.2,
+      "layer": "F.Cu",
+      "net": "GND"
+    },
+    {
+      "start": [
+        52.5,
+        55.0
+      ],
+      "end": [
+        52.575,
+        55.075
+      ],
+      "width": 0.2,
+      "layer": "F.Cu",
+      "net": "+5V"
+    },
+    {
+      "start": [
+        52.575,
+        55.075
+      ],
+      "end": [
+        66.475,
+        55.075
+      ],
+      "width": 3.0,
+      "layer": "F.Cu",
+      "net": "+5V"
+    }
+  ],
+  "vias": [
+    {
+      "at": [
+        103.0,
+        55.0
+      ],
+      "size": 5.0,
+      "drill": 2.0,
+      "layers": "\"F.Cu\" \"B.Cu\"",
+      "net": "GND"
+    },
+    {
+      "at": [
+        52.5,
+        55.0
+      ],
+      "size": 5.0,
+      "drill": 2.0,
+      "layers": "\"F.Cu\" \"B.Cu\"",
+      "net": "+5V"
+    }
+  ],
+  "zones": [
+    {
+      "layer": "B.Cu",
+      "net": "GND",
+      "priority": 0,
+      "point_count": 4,
+      "polygon": [
+        [
+          48.5,
+          49.5
+        ],
+        [
+          107.5,
+          50.0
+        ],
+        [
+          107.5,
+          60.0
+        ],
+        [
+          48.5,
+          60.0
+        ]
+      ]
+    }
+  ],
+  "outline": {
+    "bbox": [],
+    "point_count": 0
+  }
+}
